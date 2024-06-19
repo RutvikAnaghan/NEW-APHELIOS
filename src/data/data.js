@@ -1,4 +1,8 @@
-import { FiTrendingUp, FiDollarSign, FiCompass,FiCommand, FiBox, FiCamera, FiBell, FiMonitor } from '../assets/icons/vander'
+import { FiDollarSign, FiCompass,FiCommand, FiBox } from '../assets/icons/vander'
+import { FaLaravel, FaNodeJs, FaPython, FaApple, FaAndroid, FaReact, FaShopify, FaWordpress, FaMagento, FaAmazon, FaGooglePay, FaPaypal, FaBootstrap, FaAngular } from 'react-icons/fa';
+import { SiDotnet, SiFlutter, SiOpencollective, SiEbay, SiSalesforce } from 'react-icons/si';
+import { FiGlobe, FiSmartphone, FiMonitor, FiShoppingCart } from 'react-icons/fi';
+
 import client1 from '../assets/images/team/01.jpg'
 import client2 from '../assets/images/team/02.jpg'
 import client3 from '../assets/images/team/03.jpg'
@@ -17,48 +21,103 @@ import company4 from '../assets/images/team/paypal.svg'
 import company5 from '../assets/images/team/shopify.svg'
 import company6 from '../assets/images/team/spotify.svg'
 
+
+const techIcons = {
+    'Laravel Development': FaLaravel,
+    'Node JS Development': FaNodeJs,
+    '.net Development': SiDotnet,
+    'Python Development': FaPython,
+    'IOS App Development': FaApple,
+    'Android App Development': FaAndroid,
+    'React Native App Development': FaReact,
+    'Flutter App Development': SiFlutter,
+    'Responsive Website Design': FiCompass,
+    'Angular & AngularJS Development': FaAngular,
+    'ReactJs Development': FaReact,
+    'Bootstrap': FaBootstrap,
+    'Shopify Development': FaShopify,
+    'WordPress Development': FaWordpress,
+    'Magento': FaMagento,
+    'Opencart': SiOpencollective,
+    'Custom Development': FiCommand,
+    'Amazon': FaAmazon,
+    'Google Pay': FaGooglePay,
+    'Paypal': FaPaypal,
+    'Woocommerce': FiDollarSign,
+    'eBay': SiEbay
+};
+
 export const servicesData = [
     {
-        icon:FiTrendingUp,
-        title:'Custom Software Development',
-        desc:'Develop specialized software solutions tailored to your unique and strategic business needs'
+        icon: SiSalesforce,
+        title: 'Salesforce Development',
+        tech: [
+            { name: 'Salesforce Development', icon: SiSalesforce },
+            { name: 'Salesforce Lightning', icon: SiSalesforce },
+            { name: 'Salesforce Vlocity', icon: SiSalesforce },
+            { name: 'Salesforce Sales Cloud', icon: SiSalesforce },
+            { name: 'Salesforce Service Cloud', icon: SiSalesforce },
+        ],
+        desc: 'Develop specialized software solutions tailored to your unique and strategic business needs'
     },
     {
-        icon:FiDollarSign,
-        title:'Website Development',
-        desc:'Develop your website using the latest technologies and proven tools.'
+        icon: FiGlobe,
+        title: 'Website Development',
+        tech: [
+            { name: 'Laravel Development', icon: FaLaravel },
+            { name: 'Node JS Development', icon: FaNodeJs },
+            { name: '.net Development', icon: SiDotnet },
+            { name: 'Python Development', icon: FaPython }
+        ],
+        desc: 'Develop your website using the latest technologies and proven tools.'
     },
     {
-        icon:FiCompass,
-        title:'Handled By Expert',
-        desc:'If the distribution of letters and words is random, the reader will not be distracted from making.'
+        icon: FiSmartphone,
+        title: 'Mobile App Development',
+        tech: [
+            { name: 'IOS App Development', icon: FaApple },
+            { name: 'Android App Development', icon: FaAndroid },
+            { name: 'React Native App Development', icon: FaReact },
+            { name: 'Flutter App Development', icon: SiFlutter }
+        ],
+        desc: 'If the distribution of letters and words is random, the reader will not be distracted from making.'
     },
     {
-        icon:FiCommand,
-        title:'Discussion For Idea',
-        desc:'If the distribution of letters and words is random, the reader will not be distracted from making.'
+        icon: FiMonitor,
+        title: 'Web Design',
+        tech: [
+            { name: 'Responsive Website Design', icon: FiCompass },
+            { name: 'Angular & AngularJS Development', icon: FaAngular },
+            { name: 'ReactJs Development', icon: FaReact },
+            { name: 'Bootstrap', icon: FaBootstrap }
+        ],
+        desc: 'If the distribution of letters and words is random, the reader will not be distracted from making.'
     },
     {
-        icon:FiBox,
-        title:'Web Design',
-        desc:'If the distribution of letters and words is random, the reader will not be distracted from making.'
+        icon: FiBox,
+        title: 'CMS & Ecommerce Development',
+        tech: [
+            { name: 'Shopify Development', icon: FaShopify },
+            { name: 'WordPress Development', icon: FaWordpress },
+            { name: 'Magento', icon: FaMagento },
+            { name: 'Opencart', icon: SiOpencollective },
+            { name: 'Custom Development', icon: FiCommand }
+        ],
+        desc: 'If the distribution of letters and words is random, the reader will not be distracted from making.'
     },
     {
-        icon:FiCamera,
-        title:'Network Security',
-        desc:'If the distribution of letters and words is random, the reader will not be distracted from making.'
-    },
-    {
-        icon:FiBell,
-        title:'Social Media',
-        desc:'If the distribution of letters and words is random, the reader will not be distracted from making.'
-    },
-    {
-        icon:FiMonitor,
-        title:'Design & Branding',
-        desc:'If the distribution of letters and words is random, the reader will not be distracted from making.'
-    },
-]
+        icon: FiShoppingCart,
+        title: 'Payment and shipping API integration solutions',
+        tech: [
+            { name: 'Amazon', icon: FaAmazon },
+            { name: 'Google Pay', icon: FaGooglePay },
+            { name: 'Paypal', icon: FaPaypal },
+            { name: 'Woocommerce', icon: FiDollarSign },
+            { name: 'eBay', icon: SiEbay }
+        ],
+        desc: 'If the distribution of letters and words is random, the reader will not be distracted from making.'
+    }
+];
 
 export const clientData = [
     {

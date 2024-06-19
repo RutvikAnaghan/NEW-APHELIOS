@@ -2679,3 +2679,72 @@ html[dir=rtl] .tns-visually-hidden {
   --tw-text-opacity: 1 !important;
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
+
+/* New CSS */
+.textMove .text-container {
+  display: inline-flex;
+  flex-direction: column;
+  height: 2.8rem;
+  overflow: hidden;
+}
+
+.textMove .text-container span {
+  height: 2.3rem;
+  color: #16bbef;
+  animation: moveUp 10s linear infinite;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+  }
+  
+  5% {
+    transform: translateY(0);
+  }
+
+  15% {
+    transform: translateY(-2.6rem);
+  }
+
+  25% {
+    transform: translateY(-2.6rem);
+  }
+
+  35% {
+    transform: translateY(-5.4rem);
+  }
+
+  45% {
+    transform: translateY(-5.4rem);
+  }
+
+  55% {
+    transform: translateY(-8.7rem);
+  }
+
+  65% {
+    transform: translateY(-8.6rem);
+  }
+
+  75% {
+    transform: translateY(-9.4rem);
+  }
+
+  95% {
+    transform: translateY(-11.5rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+} 
+
+
+.ml-0-important {
+  margin-left: 0px !important;
+}
+
+.min-h-385 {
+  min-height: 415px !important;
+}

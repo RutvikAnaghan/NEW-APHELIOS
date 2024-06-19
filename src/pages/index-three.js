@@ -32,12 +32,19 @@ export default function IndexThree(){
             <div className="container relative">
                 <div className="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 items-center mt-6 gap-6 relative">
                     <div className="lg:col-span-7 md:me-6">
-                        <h4 className="font-semibold lg:leading-normal leading-normal tracking-wide text-4xl lg:text-5xl mb-5">Revolutionizing Your Software <span className="text-teal-500 font-bold">Development</span> with Aphelios</h4>
+                        <h4 className="font-semibold lg:leading-normal leading-normal tracking-wide text-4xl mb-5">Reliable Custom <br/>Software Development<br/>Partner in <span className="text-teal-500 font-bold textMove">
+                            <div className="text-container">
+                                <span className="mb-2" style={{ '--i': 0 }}>Ecommerce<br/></span>
+                                <span className="mb-2" style={{ '--i': 1 }}>Fintech<br/></span>
+                                <span className="mb-2" style={{ '--i': 2 }}>Healthcare<br/></span>
+                                <span className="mb-2" style={{ '--i': 3 }}>Travel &amp; Hospitality<br/></span>
+                                <span className="mb-2" style={{ '--i': 4 }}>Real Estate<br/></span>
+                            </div>
+                        </span></h4>
                         <p className="text-slate-400 text-lg max-w-xl">Whether you need a robust web presence or a customized Salesforce platform, we deliver innovative solutions that meet your unique business needs.</p>
                     
                         <div className="relative mt-6 space-x-1">
-                            <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500 text-white">Get Started</Link>
-                            <Link to="#!" onClick={() => setOpen(true)} className="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center bg-teal-500 text-white rounded-full lightbox"><i className="mdi mdi-play text-xl align-middle"></i></Link><small className="text-sm font-medium uppercase align-middle ms-2">Watch Now</small>
+                            <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500 text-white">Consult Aphelios</Link>
                         </div>
                             <ModalVideo
                                 channel="youtube"
@@ -84,8 +91,8 @@ export default function IndexThree(){
             </div>
         </section>
         <About/>
-        <AgencyTab/>
         <Services/>
+        <AgencyTab/>
         <Cta/>
         <Client/>
         <Pricing/>
