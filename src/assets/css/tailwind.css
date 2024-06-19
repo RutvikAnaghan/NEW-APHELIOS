@@ -543,7 +543,7 @@ video {
 }
 @media (min-width: 1536px){
   .container{
-    max-width: 1536px;
+    max-width: 1605px;
     padding-right: 13rem;
     padding-left: 13rem;
   }
@@ -2747,4 +2747,129 @@ html[dir=rtl] .tns-visually-hidden {
 
 .min-h-385 {
   min-height: 415px !important;
+}
+
+.statastic-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline !important;
+}
+
+.statastic-wrapper .statastic-block {
+  /* flex: 0 0 calc(25% - 160px); */
+  padding: 0px 36px 0px 31px;
+}
+
+.statastic-wrapper .statastic-block h3,
+.statastic-wrapper .statastic-block h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: #17BBEF;
+  margin: 0 0 30px 0;
+  padding: 0 0 15px 0;
+  border-bottom: 4px solid #0087f55f;
+  max-width: max-content;
+}
+
+.statastic-wrapper .statastic-block p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #4C5A67;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .statastic-wrapper .statastic-block {
+    flex-basis: calc(50% - 160px); /* Adjust for smaller screens */
+  }
+}
+
+
+
+
+.navDiv a{
+  font-size: 15px;
+  color: #4C5A67;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  text-align: center;
+  padding: 0 20px;
+  line-height: 50px;
+  font-weight: bold;
+  
+}
+
+/* .navDiv a:hover{
+  color: #F7FF0C;
+} */
+
+.hover-line::after{
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #16bbef;
+  transition: all .6s ease 0s;
+  transition: width .3;
+  
+}
+.hover-line:hover::after{
+  width: 100%;
+  transition: width .34s;
+}
+
+.tech-list {
+  display: flex;
+  justify-content: center; /* Centers the list items horizontally */
+  flex-wrap: wrap; /* Allows the items to wrap if they exceed the width of the container */
+  padding: 0;
+  margin: 20px 0;
+  list-style-type: none; /* Removes the default bullet points */
+}
+
+.tech-list li {
+  margin: 10px; /* Adds space between the list items */
+  text-align: center;
+}
+
+.tech-icon {
+  display: flex;
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center; /* Centers the image vertically */
+  width: 130px;
+  height: 90px;
+  margin-bottom: 10px;
+}
+
+.tech-title {
+  font-size: 15px;
+  color: #4C5A67;
+  position: relative;
+  z-index: 1;
+  max-width: 135px;
+  display: flex;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tech-list-animated {
+  animation: fadeIn 0.5s ease-in-out;
 }
