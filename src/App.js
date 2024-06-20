@@ -14,12 +14,12 @@ function App() {
   return (
     <Routes>
       <Route path='/' element={<IndexThree/>}/>
-      <Route path='/index-one' element={<Index/>}/>
+      {/* <Route path='/index-one' element={<Index/>}/>
       <Route path='/index-two' element={<IndexTwo/>}/>
       <Route path='/index-four' element={<IndexFour/>}/>
       <Route path='/index-five' element={<IndexFive/>}/>
       <Route path='/index-six' element={<IndexSix/>}/>
-      <Route path='/index-seven' element={<IndexSeven/>}/>
+      <Route path='/index-seven' element={<IndexSeven/>}/> */}
     </Routes>
   );
 }

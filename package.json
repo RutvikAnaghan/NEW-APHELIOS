@@ -1,7 +1,7 @@
 {
-  "name": "upcover",
+  "name": "Aphelios",
   "version": "1.0.0",
-  "description": "Upcover - React js Business Landing Page Template",
+  "description": "Aphelios Solution LLP - You dream it, We build it",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

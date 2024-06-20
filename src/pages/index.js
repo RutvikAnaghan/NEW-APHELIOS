@@ -23,7 +23,7 @@ export default function Index(){
             <div className="container relative mt-8">
                 <div className="grid md:grid-cols-2 grid-cols-1 gap-6 items-center">
                     <div>
-                        <h1 className="font-semibold lg:leading-normal leading-normal tracking-wide text-4xl lg:text-5xl mb-5">Get Creative & Modern With Upcover</h1>
+                        <h1 className="font-semibold lg:leading-normal leading-normal tracking-wide text-4xl lg:text-5xl mb-5">Get Creative & Modern With Aphelios Solution LLP</h1>
                         <p className="text-slate-400 text-lg max-w-xl">This is just a simple text made for this unique and awesome template, you can replace it with any text.</p>
                         
                         <div className="mt-6">
