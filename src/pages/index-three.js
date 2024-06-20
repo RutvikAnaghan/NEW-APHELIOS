@@ -67,22 +67,22 @@ export default function IndexThree(){
                                         <FiMonitor className="h-6 w-6"/>
                                     </div>
                                     <div className="flex-1">
-                                        <span className="text-slate-400">Visitor</span>
-                                        <p className="text-xl font-bold"><CountUp className="counter-value" start={0} end={4589}/></p>
+                                        <span className="text-slate-400">Salesforce Solutions</span>
+                                        {/* <p className="text-xl font-bold"><CountUp className="counter-value" start={0} end={7000}/></p> */}
                                     </div>
                                 </div>
     
-                                <span className="text-red-600"><i className="uil uil-chart-down"></i> 0.5%</span>
+                                {/* <span className="text-red-600"><i className="uil uil-chart-down"></i> 99.99%</span> */}
                             </div>
     
                             <div className="absolute top-16 md:-end-10 -end-5 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 w-48 m-3">
                                 <h5 className="text-lg font-semibold mb-3">Manage Software</h5>
                                 <div className="flex justify-between mt-3 mb-2">
                                     <span className="text-slate-400">Progress</span>
-                                    <span className="text-slate-400">84%</span>
+                                    <span className="text-slate-400">99.99%</span>
                                 </div>
                                 <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
-                                    <div className="bg-teal-500 h-[6px] rounded-full" style={{width: "84%"}}></div>
+                                    <div className="bg-teal-500 h-[6px] rounded-full" style={{width: "99.99%"}}></div>
                                 </div>
                             </div>
                         </div>

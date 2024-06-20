@@ -4,6 +4,11 @@ import { clientData } from "../data/data";
 import TinySlider from "tiny-slider-react";
 import 'tiny-slider/dist/tiny-slider.css';
 
+import google from "../assets/images/review/Google_2015_logo.svg"
+import trustpilot from "../assets/images/review/Trustpilot_Logo_(2022).svg"
+import clutch from "../assets/images/review/clutch-co-vector-logo.svg"
+
+
 export default function Client(){
     const settings = {
         container: '.tiny-three-item',
@@ -37,10 +42,69 @@ export default function Client(){
             <div className="grid grid-cols-1 pb-6 text-center">
                 <h3 className="font-semibold text-2xl leading-normal mb-4">What Our Users Say</h3>
 
-                <p className="text-slate-400 max-w-xl mx-auto">This is just a simple text made for this unique and awesome template, you can replace it with any text.</p>
+                <p className="text-slate-400 max-w-xl mx-auto">Explore the experiences and feedback from our valued customers about our innovative solutions and exceptional service.</p>
             </div>
 
-            <div className="grid grid-cols-1 mt-6">
+            <div className="flex align-items-center text-center jt-center-gap mt-6 mb-6" data-aos="fade-up">
+                <div>
+                    <a
+                        target="_blank"
+                        href=""
+                        rel="noopener noreferrer"
+                    >
+                        <div className="review">
+                            <img
+                                src={google}
+                                alt="Google Review"
+                                width="136"
+                                height="67"
+                                loading="lazy"
+                                fetchpriority="low"
+                            />
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <div className="divider"></div>
+                    <a
+                        target="_blank"
+                        href=""
+                        rel="noopener noreferrer"
+                    >
+                        <div className="review review-border">
+                            <img
+                                src={trustpilot}
+                                alt="Glassdoor Review"
+                                width="153"
+                                height="68"
+                                loading="lazy"
+                                fetchpriority="low"
+                            />
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <div className="divider"></div>
+                    <a
+                        target="_blank"
+                        href=""
+                        rel="noopener noreferrer"
+                    >
+                        <div className="review">
+                            <img
+                                src={clutch}
+                                alt="Clutch Review"
+                                width="136"
+                                height="64"
+                                loading="lazy"
+                                fetchpriority="low"
+                            />
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div className="grid grid-cols-1 mt-12">
                 <div className="tiny-three-item">
                 <TinySlider settings={settings}>
                     {clientData.map((item, index)=>{

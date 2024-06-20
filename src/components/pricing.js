@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+import bg from '../assets/images/bg/2.png'
+
 export default function Pricing(){
 
     const [activeTab, setActiveTab] = useState("Salesforce"); // Default active tab
@@ -10,7 +12,7 @@ export default function Pricing(){
     };
 
     return(
-        <section className="relative md:py-24 py-16 bg-slate-50 dark:bg-slate-800" id="pricing">
+        <section className="relative md:py-24 py-16 bg-slate-50 dark:bg-slate-800" id="pricing" style={{backgroundImage:`url(${bg})`}}>
         <div className="container relative">
             <div className="grid grid-cols-1 pb-6 text-center">
                 <h3 className="font-semibold text-2xl leading-normal mb-4">Packages</h3>
@@ -65,7 +67,7 @@ export default function Pricing(){
             </div>
             {activeTab === "Salesforce" && (
             <div className="Salesforce">
-                <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 mt-6 gap-6">
+                <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 mt-6 gap-6">
                     {/* <div></div> */}
                     <div className="group p-6 relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
                         <h6 className="font-semibold mb-5 text-xl">Salesforce</h6>
@@ -77,13 +79,13 @@ export default function Pricing(){
                         </div>
 
                         <ul className="list-none text-slate-400">
-                            <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>Homepage (Landing page)Design</span></li>
-                            <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>PSD/ XD/ Figma</span></li>
-                            <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>Responsive Design</span></li>
-                            <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>Source Files</span></li>
-                            <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>1 Page</span></li>
-                            <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>3 Revisions</span></li>
-                            <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>Delivery Based on requirement</span></li>
+                            <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>Sales cloud development</span></li>
+                            <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>Service cloud development</span></li>
+                            <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>Marketing cloud development</span></li>
+                            <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>Commerce cloud development</span></li>
+                            <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>Insurance cloud development</span></li>
+                            <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>Comunication cloud development</span></li>
+                            <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>MuleSoft integration</span></li>
 
 
                         </ul>

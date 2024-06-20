@@ -9,6 +9,8 @@ import client3 from '../assets/images/team/03.jpg'
 import client4 from '../assets/images/team/04.jpg'
 import client5 from '../assets/images/team/05.jpg'
 import client6 from '../assets/images/team/06.jpg'
+import client7 from '../assets/images/team/07.jpg'
+
 
 import blog1 from '../assets/images/blog/01.jpg'
 import blog2 from '../assets/images/blog/02.jpg'
@@ -22,30 +24,30 @@ import company5 from '../assets/images/team/shopify.svg'
 import company6 from '../assets/images/team/spotify.svg'
 
 
-const techIcons = {
-    'Laravel Development': FaLaravel,
-    'Node JS Development': FaNodeJs,
-    '.net Development': SiDotnet,
-    'Python Development': FaPython,
-    'IOS App Development': FaApple,
-    'Android App Development': FaAndroid,
-    'React Native App Development': FaReact,
-    'Flutter App Development': SiFlutter,
-    'Responsive Website Design': FiCompass,
-    'Angular & AngularJS Development': FaAngular,
-    'ReactJs Development': FaReact,
-    'Bootstrap': FaBootstrap,
-    'Shopify Development': FaShopify,
-    'WordPress Development': FaWordpress,
-    'Magento': FaMagento,
-    'Opencart': SiOpencollective,
-    'Custom Development': FiCommand,
-    'Amazon': FaAmazon,
-    'Google Pay': FaGooglePay,
-    'Paypal': FaPaypal,
-    'Woocommerce': FiDollarSign,
-    'eBay': SiEbay
-};
+// const techIcons = {
+//     'Laravel Development': FaLaravel,
+//     'Node JS Development': FaNodeJs,
+//     '.net Development': SiDotnet,
+//     'Python Development': FaPython,
+//     'IOS App Development': FaApple,
+//     'Android App Development': FaAndroid,
+//     'React Native App Development': FaReact,
+//     'Flutter App Development': SiFlutter,
+//     'Responsive Website Design': FiCompass,
+//     'Angular & AngularJS Development': FaAngular,
+//     'ReactJs Development': FaReact,
+//     'Bootstrap': FaBootstrap,
+//     'Shopify Development': FaShopify,
+//     'WordPress Development': FaWordpress,
+//     'Magento': FaMagento,
+//     'Opencart': SiOpencollective,
+//     'Custom Development': FiCommand,
+//     'Amazon': FaAmazon,
+//     'Google Pay': FaGooglePay,
+//     'Paypal': FaPaypal,
+//     'Woocommerce': FiDollarSign,
+//     'eBay': SiEbay
+// };
 
 export const servicesData = [
     {
@@ -121,40 +123,46 @@ export const servicesData = [
 
 export const clientData = [
     {
-        image:client1,
-        name:'Calvin Carlo',
-        title:'Manager',
-        desc:'" It seems that only fragments of the original text remain in the Lorem Ipsum texts used today. "'
+        image:client2,
+        name:'Sarah J.',
+        title:'Co-founder',
+        desc:'" Aphelios Solutions LLP revamped our website into a modern, responsive platform. Their expertise and attention to detail are exceptional! "'
     },
     {
-        image:client2,
-        name:'Christa Smith',
-        title:'Manager',
-        desc:'" The most well-known dummy text is the Lorem Ipsum, which is said to have originated in the 16th century. "'
+        image:client1,
+        name:'Mark D.',
+        title:'Owner',
+        desc:'" Our mobile app vision was brought to life flawlessly by Aphelios Team. Delivered on time, it exceeded our expectations. "'
     },
     {
         image:client3,
-        name:'Jemina CLone',
-        title:'Manager',
-        desc:'" One disadvantage of Lorum Ipsum is that in Latin certain letters appear more frequently than others"'
+        name:'Emma R.',
+        title:'CEO',
+        desc:'" Talented and professional, Aphelios Team delivered a beautiful and functional web solution. Their support was exceptional. "'
     },
     {
         image:client4,
-        name:'Smith Vodka',
-        title:'Manager',
-        desc:'" Thus, Lorem Ipsum has only limited suitability as a visual filler for German texts "'
+        name:'John K.',
+        title:'Director of Sales',
+        desc:'" Top-notch mobile app development from Aphelios. Innovative solutions and great user feedback made our app a success. "'
     },
     {
         image:client5,
-        name:'Cristino Murfi',
-        title:'Manager',
-        desc:'" There is now an abundance of readable dummy texts. These are usually used when a text is required"'
+        name:'Laura M.',
+        title:'CEO & Founder',
+        desc:'" Our new website perfectly represents our brand thanks to Aphelios Solutions LLP. Their creativity and technical prowess were outstanding. "'
     },
     {
         image:client6,
-        name:'Cristino Murfi',
-        title:'Manager',
-        desc:'" According to most sources, Lorum Ipsum can be traced back to a text composed by Cicero "'
+        name:'David H.',
+        title:'Logistics Coordinator',
+        desc:'" The app developed by Aphelios Solutions LLP is user-friendly, fast, and reliable. Their professionalism and responsiveness were impressive. "'
+    },
+    {
+        image:client7,
+        name:'Jennifer L.',
+        title:'Logistics Coordinator',
+        desc:'" Aphelios Solutions LLP turned our ideas into a functional and appealing website. The project was completed on time and within budget. "'
     },
 ]
 

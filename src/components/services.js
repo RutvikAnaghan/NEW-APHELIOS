@@ -2,9 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { servicesData } from "../data/data";
 
+import bg from '../assets/images/bg/2.png'
+
 export default function Services(){
     return(
-        <section className="relative md:py-24 py-16 bg-slate-50 dark:bg-slate-800" id="services">
+        <section className="relative md:py-24 py-16 bg-slate-50 dark:bg-slate-800" id="services" style={{backgroundImage:`url(${bg})`}}>
             <div className="container relative">
                 <div className="grid grid-cols-1 pb-6 text-center">
                     <h3 className="font-semibold text-2xl leading-normal mb-4">Services we can help you with</h3>

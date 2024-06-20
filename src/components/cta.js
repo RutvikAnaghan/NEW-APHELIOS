@@ -50,6 +50,8 @@ import trello from "../assets/images/techicon/pm/Trello.svg";
 import mdc from "../assets/images/techicon/pm/MondayDotCom.svg";
 import pivotal from "../assets/images/techicon/pm/Pivotal.svg";
 
+import bg from '../assets/images/bg/2.png'
+
 export default function Cta() {
   const [activeTab, setActiveTab] = useState("Salesforce"); // Default active tab
 
@@ -59,7 +61,7 @@ export default function Cta() {
   return (
     <section
       className="relative md:py-24 py-16 bg-slate-50 dark:bg-slate-800"
-      id="technologies"
+      id="technologies" style={{backgroundImage:`url(${bg})`}}
     >
       <div className="container relative">
         <div className="col-12">

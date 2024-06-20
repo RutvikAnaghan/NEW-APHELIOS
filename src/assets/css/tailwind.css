@@ -2873,3 +2873,82 @@ html[dir=rtl] .tns-visually-hidden {
 .tech-list-animated {
   animation: fadeIn 0.5s ease-in-out;
 }
+
+.jt-center-gap{
+  justify-content: center;
+  gap: 300px;
+}
+
+.c-info-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.title-p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+
+  li {
+      margin-bottom: 1rem;
+
+      a {
+          display: flex;
+          align-items: center;
+          color: #17BBEF;
+          text-decoration: none;
+          font-size: 1rem;
+          transition: color 0.3s;
+
+          &:hover {
+              color: #17BBEF;
+          }
+
+          svg {
+              margin-right: 0.5rem;
+          }
+      }
+  }
+  li:last-child {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+}
+
+.check-icon-p {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  color: #666;
+
+  svg {
+      margin-right: 0.5rem;
+  }
+
+  span {
+      max-width: 300px;
+  }
+}
+
+
+.contactus{
+  background: #F9FAFA;
+  padding: 20px;
+  box-shadow: 0 0 50px rgb(162 182 212 / .25);
+  backdrop-filter: blur(56px);
+  border-radius: 20px;
+}
+
+.back-ground-style{
+  min-height: 515px;
+  background: linear-gradient(135deg, hsl(246 42% 91%) 0%, hsl(247 26% 93%) 25%, hsl(247 26% 93%) 50%, hsl(208 58% 88%) 75%, hsl(197 53% 89%) 100%);
+}
