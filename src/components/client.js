@@ -6,7 +6,9 @@ import 'tiny-slider/dist/tiny-slider.css';
 
 import google from "../assets/images/review/Google_2015_logo.svg"
 import trustpilot from "../assets/images/review/Trustpilot_Logo_(2022).svg"
+import trustpilotdark from "../assets/images/review/logo-trustpilot_white.svg"
 import clutch from "../assets/images/review/clutch-co-vector-logo.svg"
+import clutchWhite from "../assets/images/review/clutch-co-white.svg"
 
 
 export default function Client(){
@@ -71,9 +73,19 @@ export default function Client(){
                         href=""
                         rel="noopener noreferrer"
                     >
-                        <div className="review review-border">
+                        <div className="review review-border inline-block dark:hidden">
                             <img
                                 src={trustpilot}
+                                alt="Glassdoor Review"
+                                width="153"
+                                height="68"
+                                loading="lazy"
+                                fetchpriority="low"
+                            />
+                        </div>
+                        <div className="review review-border hidden dark:inline-block">
+                            <img
+                                src={trustpilotdark}
                                 alt="Glassdoor Review"
                                 width="153"
                                 height="68"
@@ -90,9 +102,19 @@ export default function Client(){
                         href=""
                         rel="noopener noreferrer"
                     >
-                        <div className="review">
+                        <div className="review inline-block dark:hidden">
                             <img
                                 src={clutch}
+                                alt="Clutch Review"
+                                width="136"
+                                height="64"
+                                loading="lazy"
+                                fetchpriority="low"
+                            />
+                        </div>
+                        <div className="review  hidden dark:inline-block">
+                            <img
+                                src={clutchWhite}
                                 alt="Clutch Review"
                                 width="136"
                                 height="64"

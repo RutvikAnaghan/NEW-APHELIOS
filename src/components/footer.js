@@ -20,7 +20,6 @@ export default function Footer(){
                         </div>
 
                         <ul className="lg:col-span-4 list-none md:text-end text-center mt-6 md:mt-0">
-                            {/* <li className="inline"><Link to="" target="_blank" className="size-8 inline-flex justify-center items-center border border-gray-800 rounded-md hover:border-teal-500 dark:hover:border-teal-500 hover:bg-teal-500 dark:hover:bg-teal-500"><FiShoppingCart data-feather="shopping-cart" className="size-4 align-middle" title="Buy Now"/></Link></li> */}
                             <li className="inline"><Link to="" target="_blank" className="size-8 inline-flex justify-center items-center border border-gray-800 rounded-md hover:border-teal-500 dark:hover:border-teal-500 hover:bg-teal-500 dark:hover:bg-teal-500"><FiDribbble className="size-4 align-middle" title="dribbble"/></Link></li>
                             <li className="inline"><Link to="" target="_blank" className="size-8 inline-flex justify-center items-center border border-gray-800 rounded-md hover:border-teal-500 dark:hover:border-teal-500 hover:bg-teal-500 dark:hover:bg-teal-500"><FiLinkedin className="size-4 align-middle" title="Linkedin"/></Link></li>
                             <li className="inline"><Link to="" target="_blank" className="size-8 inline-flex justify-center items-center border border-gray-800 rounded-md hover:border-teal-500 dark:hover:border-teal-500 hover:bg-teal-500 dark:hover:bg-teal-500"><FiFacebook className="size-4 align-middle" title="instagram"/></Link></li>

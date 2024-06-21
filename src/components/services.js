@@ -10,8 +10,6 @@ export default function Services(){
             <div className="container relative">
                 <div className="grid grid-cols-1 pb-6 text-center">
                     <h3 className="font-semibold text-2xl leading-normal mb-4">Services we can help you with</h3>
-
-                    {/* <p className="text-slate-400 max-w-xl mx-auto">This is just a simple text made for this unique and awesome template, you can replace it with any text.</p> */}
                 </div>
 
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-6 mt-6">
@@ -29,7 +27,7 @@ export default function Services(){
                                 {item.tech.map((tech, techIndex) => {
                                     let TechIcon = tech.icon;
                                     return (
-                                        <li key={techIndex} className="flex items-center mt-2 ml-0-important group-hover:text-dark">
+                                        <li key={techIndex} className="flex items-center mt-2 ml-0-important group-hover:text-dark dark:group-hover:text-white">
                                             {TechIcon && <TechIcon className="mr-2"/>} {tech.name}
                                         </li>
                                     );

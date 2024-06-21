@@ -20,7 +20,7 @@ export default function Pricing(){
 
             <div className="navDiv text-center">
               <a
-                className={`hover-line ${
+                className={`hover-line dark:text-white ${
                   activeTab === "Salesforce" ? "active" : ""
                 }`}
                 onClick={() => handleTabClick("Salesforce")}
@@ -28,7 +28,7 @@ export default function Pricing(){
                 Salesforce
               </a>
               <a
-                className={`hover-line ${
+                className={`hover-line dark:text-white ${
                   activeTab === "WebDesign" ? "active" : ""
                 }`}
                 onClick={() => handleTabClick("WebDesign")}
@@ -36,7 +36,7 @@ export default function Pricing(){
                 Web Design
               </a>
               <a
-                className={`hover-line ${
+                className={`hover-line dark:text-white ${
                   activeTab === "WebDevelopment" ? "active" : ""
                 }`}
                 onClick={() => handleTabClick("WebDevelopment")}
@@ -44,7 +44,7 @@ export default function Pricing(){
                 Web Development
               </a>
               <a
-                className={`hover-line ${
+                className={`hover-line dark:text-white ${
                   activeTab === "MobileAppDesign" ? "active" : ""
                 }`}
                 onClick={() => handleTabClick("MobileAppDesign")}
@@ -52,13 +52,13 @@ export default function Pricing(){
                 Mobile App Design
               </a>
               <a
-                className={`hover-line ${activeTab === "MobileAppDevelopment" ? "active" : ""}`}
+                className={`hover-line dark:text-white ${activeTab === "MobileAppDevelopment" ? "active" : ""}`}
                 onClick={() => handleTabClick("MobileAppDevelopment")}
               >
                 Mobile App Development
               </a>
               <a
-                className={`hover-line ${activeTab === "FbInstaPaidAds" ? "active" : ""}`}
+                className={`hover-line dark:text-white ${activeTab === "FbInstaPaidAds" ? "active" : ""}`}
                 onClick={() => handleTabClick("FbInstaPaidAds")}
               >
                 FB & INSTA PAID ADS
