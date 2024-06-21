@@ -23,7 +23,7 @@ function App() {
               <Loader />
           ) : (
               <Routes>
-                  <Route path='/' element={<IndexThree />} />
+                  <Route path='/*' element={<IndexThree />} />
                   {/* <Route path='/index-one' element={<Index/>}/>
                   <Route path='/index-two' element={<IndexTwo/>}/>
                   <Route path='/index-four' element={<IndexFour/>}/>

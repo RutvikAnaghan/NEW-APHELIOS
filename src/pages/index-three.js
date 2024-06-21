@@ -74,7 +74,7 @@ export default function IndexThree(){
     
                             </div>
     
-                            <div className="absolute top-16 md:-end-10 -end-5 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 w-48 m-3">
+                            {/* <div className="absolute top-16 md:-end-10 -end-5 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 w-48 m-3">
                                 <h5 className="text-lg font-semibold mb-3 ml-3">Strategic Partner</h5>
                                 <div className="flex justify-between mt-3 mb-2">
                                     <Link target="_blank" to="https://www.advayan.com/">
@@ -84,7 +84,7 @@ export default function IndexThree(){
                                     </Link>
 
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
