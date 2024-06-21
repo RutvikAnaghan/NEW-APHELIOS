@@ -1629,7 +1629,7 @@ p{
           padding-inline-start: 0px;
 }
 .navbar .navbar-brand{
-  max-width: 108px !important;
+  max-width: 140px !important;
   padding: 0px;
 }
 .navbar .navbar-brand .l-dark,
@@ -1707,6 +1707,7 @@ p{
   }
   .navbar .navigation .navbar-nav .nav-link{
     border-width: 0px;
+    font-size: 14px;
   }
   .navbar .navigation .navbar-nav .nav-link:hover{
     background-color: transparent;
@@ -2957,4 +2958,8 @@ html[dir=rtl] .tns-visually-hidden {
 .text-margin{
   margin-left: 10%;
   margin-right: 10%;
+}
+
+.cursor-pointer{
+  cursor: pointer !important;
 }

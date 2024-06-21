@@ -16,6 +16,9 @@ import GetInTouch from "../components/getInTuoch";
 import Footer from "../components/footer";
 import Switcher from "../components/switcher";
 
+import advayan from "../assets/images/advayan_color_logo.png"
+import advayanwhite from "../assets/images/advayan_white.png"
+
 import { FiMonitor } from '../assets/icons/vander'
 
 import ModalVideo from 'react-modal-video';
@@ -65,22 +68,21 @@ export default function IndexThree(){
                                         <FiMonitor className="h-6 w-6"/>
                                     </div>
                                     <div className="flex-1">
-                                        <span className="text-slate-400">Salesforce Solutions</span>
-                                        {/* <p className="text-xl font-bold"><CountUp className="counter-value" start={0} end={7000}/></p> */}
+                                        <span className="text-lg font-semibold">Salesforce Solutions</span>
                                     </div>
                                 </div>
     
-                                {/* <span className="text-red-600"><i className="uil uil-chart-down"></i> 99.99%</span> */}
                             </div>
     
                             <div className="absolute top-16 md:-end-10 -end-5 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 w-48 m-3">
-                                <h5 className="text-lg font-semibold mb-3">Manage Software</h5>
+                                <h5 className="text-lg font-semibold mb-3 ml-3">Strategic Partner</h5>
                                 <div className="flex justify-between mt-3 mb-2">
-                                    <span className="text-slate-400">Progress</span>
-                                    <span className="text-slate-400">99.99%</span>
-                                </div>
-                                <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
-                                    <div className="bg-teal-500 h-[6px] rounded-full" style={{width: "99.99%"}}></div>
+                                    <Link target="_blank" to="https://www.advayan.com/">
+                                        <img src={advayan} className="inline-block dark:hidden" alt=""/>
+                                        <img src={advayanwhite} className="hidden dark:inline-block" alt=""/>
+
+                                    </Link>
+
                                 </div>
                             </div>
                         </div>
