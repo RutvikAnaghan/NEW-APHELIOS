@@ -18,8 +18,6 @@ import Switcher from "../components/switcher";
 
 import { FiMonitor } from '../assets/icons/vander'
 
-import CountUp from 'react-countup';
-
 import ModalVideo from 'react-modal-video';
 import '../../node_modules/react-modal-video/scss/modal-video.scss';
 
