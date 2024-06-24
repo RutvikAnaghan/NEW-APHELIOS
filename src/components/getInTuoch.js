@@ -1,14 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaPhoneAlt, FaEnvelope, FaSkype } from "react-icons/fa";
+import { postData } from "../services/consultFormService";
+import { toast } from "react-toastify";
 
-import bg from '../assets/images/bg/2.png'
+import bg from "../assets/images/bg/2.png";
 
 export default function GetInTouch() {
+  const initialFormState = {
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    projectDescription: "",
+    message: "",
+  };
+
+  const [formData, setFormData] = useState(initialFormState);
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const data = await postData("/formSubmissions", formData);
+      toast.success("Thank you, our team will get back to you shortly");
+      setFormData(initialFormState);
+    } catch (error) {
+      toast.error("Error: " + error);
+    }
+  };
+
   return (
     <section
       className="relative lg:py-24 py-16 bg-slate-50 dark:bg-slate-800"
       id="contact"
-      style={{backgroundImage:`url(${bg})`}}
+      style={{ backgroundImage: `url(${bg})` }}
     >
       <div className="container relative">
         <div className="grid grid-cols-1 pb-6 text-center">
@@ -26,24 +57,37 @@ export default function GetInTouch() {
         <div className="grid md:grid-cols-12 grid-cols-1 items-center gap-6 contactus dark:shadow-gray-700 bg-white dark:bg-slate-900">
           <div className="lg:col-span-4 md:col-span-6 dark:bg-slate-900 ">
             <div className="contact-info rounded-md shadow p-6 back-ground-style  dark:bg-slate-900 dark:shadow-gray-700">
-              <span className="font-semibold text-2xl leading-normal mb-4">Contact Information</span>
+              <span className="font-semibold text-2xl leading-normal mb-4">
+                Contact Information
+              </span>
               <p className="text-slate-400 max-w-xl mx-auto mb-5">
                 Fill up the form and our Team will get back to you within 24
                 hours.
               </p>
               <ul>
                 <li className="ml-0-important">
-                  <a href="tel:+919979845155" className="text-slate-400 max-w-xl mx-auto">
+                  <a
+                    href="tel:+919979845155"
+                    className="text-slate-400 max-w-xl mx-auto"
+                  >
                     <FaPhoneAlt /> +91 99798-45155
                   </a>
                 </li>
                 <li className="ml-0-important">
-                  <a href="mailto:about@apheliossolution.com" className="text-slate-400 max-w-xl mx-auto">
+                  <a
+                    href="mailto:about@apheliossolution.com"
+                    className="text-slate-400 max-w-xl mx-auto"
+                  >
                     <FaEnvelope /> about@apheliossolution.com
                   </a>
                 </li>
                 <li className="ml-0-important">
-                  <a href="" target="_blank" rel="noopener noreferrer" className="text-slate-400 max-w-xl mx-auto">
+                  <a
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-slate-400 max-w-xl mx-auto"
+                  >
                     <FaSkype /> Aphelios Solution LLP
                   </a>
                 </li>
@@ -77,81 +121,97 @@ export default function GetInTouch() {
           <div className="lg:col-span-8 md:col-span-6">
             <div className="lg:ms-5">
               <div className="dark:bg-slate-900 dark:shadow-gray-700 rounded-md p-6">
-                <form>
+                <form onSubmit={handleSubmit}>
                   <div className="grid lg:grid-cols-12 grid-cols-1 gap-3">
                     <div className="lg:col-span-6">
-                      <label htmlFor="name" className="font-semibold">
-                        First Name:
+                      <label htmlFor="firstName" className="font-semibold">
+                        First Name
                       </label>
                       <input
-                        name="name"
-                        id="name"
+                        name="firstName"
+                        id="firstName"
                         type="text"
                         className="mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 dark:border-gray-800 focus:ring-0"
-                        placeholder="Name :"
+                        placeholder="First Name"
+                        value={formData.firstName}
+                        onChange={handleChange}
                       />
                     </div>
 
                     <div className="lg:col-span-6">
-                      <label htmlFor="name" className="font-semibold">
-                        Last Name:
+                      <label htmlFor="lastName" className="font-semibold">
+                        Last Name
                       </label>
                       <input
-                        name="name"
-                        id="name"
+                        name="lastName"
+                        id="lastName"
                         type="text"
                         className="mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 dark:border-gray-800 focus:ring-0"
-                        placeholder="Name :"
+                        placeholder="Last Name"
+                        value={formData.lastName}
+                        onChange={handleChange}
                       />
                     </div>
 
                     <div className="lg:col-span-6">
                       <label htmlFor="email" className="font-semibold">
-                        Email:
+                        Email
                       </label>
                       <input
                         name="email"
                         id="email"
                         type="email"
                         className="mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 dark:border-gray-800 focus:ring-0"
-                        placeholder="Email :"
+                        placeholder="Email"
+                        value={formData.email}
+                        onChange={handleChange}
                       />
                     </div>
 
                     <div className="lg:col-span-6">
-                      <label htmlFor="email" className="font-semibold">
-                        Phone:
+                      <label htmlFor="phone" className="font-semibold">
+                        Phone
                       </label>
                       <input
-                        name="Phone"
-                        id="Phone"
+                        name="phone"
+                        id="phone"
                         type="text"
                         className="mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 dark:border-gray-800 focus:ring-0"
-                        placeholder="Email :"
+                        placeholder="Phone"
+                        maxLength={10}
+                        value={formData.phone}
+                        onChange={handleChange}
                       />
                     </div>
 
                     <div className="lg:col-span-12">
-                      <label htmlFor="subject" className="font-semibold">
-                      Project Description:
+                      <label
+                        htmlFor="projectDescription"
+                        className="font-semibold"
+                      >
+                        Project Description
                       </label>
                       <input
-                        name="subject"
-                        id="subject"
+                        name="projectDescription"
+                        id="projectDescription"
                         className="mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 dark:border-gray-800 focus:ring-0"
-                        placeholder="Subject :"
+                        placeholder="Project Description"
+                        value={formData.projectDescription}
+                        onChange={handleChange}
                       />
                     </div>
 
                     <div className="lg:col-span-12">
-                      <label htmlFor="comments" className="font-semibold">
-                        Comment:
+                      <label htmlFor="message" className="font-semibold">
+                        Message
                       </label>
                       <textarea
-                        name="comments"
-                        id="comments"
+                        name="message"
+                        id="message"
                         className="mt-2 w-full py-2 px-3 h-28 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 dark:border-gray-800 focus:ring-0"
-                        placeholder="Message :"
+                        placeholder="Message"
+                        value={formData.message}
+                        onChange={handleChange}
                       ></textarea>
                     </div>
                   </div>

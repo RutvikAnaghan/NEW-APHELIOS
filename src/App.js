@@ -2,9 +2,11 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import './assets/css/tailwind.css';
 import './assets/css/materialdesignicons.min.css';
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import Loader from './components/loader';
 import IndexThree from './pages/index-three';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -23,7 +25,9 @@ function App() {
               <Loader />
           ) : (
               <Routes>
-                  <Route path='/*' element={<IndexThree />} />
+                  <Route path='/' exact={true} element={<IndexThree />} />
+                  <Route path='*' element={<Navigate to='/' replace />} />
+
                   {/* <Route path='/index-one' element={<Index/>}/>
                   <Route path='/index-two' element={<IndexTwo/>}/>
                   <Route path='/index-four' element={<IndexFour/>}/>
@@ -32,6 +36,7 @@ function App() {
                   <Route path='/index-seven' element={<IndexSeven/>}/> */}
               </Routes>
           )}
+          <ToastContainer></ToastContainer>
       </>
   );
 }

@@ -89,7 +89,7 @@ export default function Pricing(){
 
 
                         </ul>
-                        <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Cunsult Aphelios</Link>
+                        <Link to="/get-in-touch" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Consult Aphelios</Link>
                         {/* <p className="text-sm text-slate-400 mt-1.5"><span className="text-red-600">*</span>T&C Apply</p> */}
                     </div>
 
@@ -102,7 +102,7 @@ export default function Pricing(){
                             <ul className="list-none">
                                 <li className="mb-1 font-medium flex"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>Custom Pricing</span></li>
                             </ul>
-                            <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Talk to us</Link>
+                            <Link to="mailto:about@apheliossolution.com?subject=Custom%20requirements%20service&body=Hello,%0D%0A%0D%0AI%20would%20like%20to%20book%20a%20Custom%20service." className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Talk to us</Link>
                         </div>
                     </div>
                 </div>
@@ -131,7 +131,7 @@ export default function Pricing(){
 
 
                         </ul>
-                        <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Cunsult Aphelios</Link>
+                        <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Consult Aphelios</Link>
                     </div>
 
                     <div className="group p-6 relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
@@ -153,7 +153,7 @@ export default function Pricing(){
                             <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>Delivery Based on requirement</span></li>
 
                         </ul>
-                        <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Cunsult Aphelios</Link>
+                        <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Consult Aphelios</Link>
                     </div>
 
                     <div className="group relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
@@ -177,7 +177,7 @@ export default function Pricing(){
                                 <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>Delivery Based on requirement</span></li>
 
                             </ul>
-                            <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Cunsult Aphelios</Link>
+                            <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Consult Aphelios</Link>
 
                             {/* <p className="text-sm text-slate-400 mt-1.5"><span className="text-red-600">*</span>T&C Apply</p> */}
                         </div>
@@ -220,7 +220,7 @@ export default function Pricing(){
                             <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>8 Revisions</span></li>
                             <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>Delivery Based on requirement</span></li>
                         </ul>
-                        <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Cunsult Aphelios</Link>
+                        <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Consult Aphelios</Link>
                     </div>
 
                     <div className="group p-6 relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
@@ -242,7 +242,7 @@ export default function Pricing(){
                             <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>8 Revisions</span></li>
                             <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>Delivery Based on requirement</span></li>
                         </ul>
-                        <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Cunsult Aphelios</Link>
+                        <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Consult Aphelios</Link>
                     </div>
 
                     <div className="group relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
@@ -266,7 +266,7 @@ export default function Pricing(){
                             <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>8 Revisions</span></li>
                             <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>Delivery Based on requirement</span></li>
                             </ul>
-                            <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Cunsult Aphelios</Link>
+                            <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Consult Aphelios</Link>
 
                             {/* <p className="text-sm text-slate-400 mt-1.5"><span className="text-red-600">*</span>T&C Apply</p> */}
                         </div>
@@ -295,7 +295,7 @@ export default function Pricing(){
                             <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>1 month free support</span></li>
                             <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>Delivery Based on requirement</span></li>
                             </ul>
-                            <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Cunsult Aphelios</Link>
+                            <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Consult Aphelios</Link>
                         </div>
                     </div>
 
@@ -320,7 +320,7 @@ export default function Pricing(){
                             <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>1 month free support</span></li>
                             <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>Delivery Based on requirement</span></li>
                             </ul>
-                            <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Cunsult Aphelios</Link>
+                            <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Consult Aphelios</Link>
                         </div>
                     </div>
 
@@ -346,7 +346,7 @@ export default function Pricing(){
                             <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>1 month free support</span></li>
                             <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>Delivery Based on requirement</span></li>
                             </ul>
-                            <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Cunsult Aphelios</Link>
+                            <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Consult Aphelios</Link>
                         </div>
                     </div>
 
@@ -371,7 +371,7 @@ export default function Pricing(){
                             <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>1 month free support</span></li>
                             <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>Delivery Based on requirement</span></li>
                             </ul>
-                            <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Cunsult Aphelios</Link>
+                            <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Consult Aphelios</Link>
                         </div>
                     </div>
 
@@ -397,7 +397,7 @@ export default function Pricing(){
                             <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>1 month free support</span></li>
                             <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>Delivery Based on requirement</span></li>
                             </ul>
-                            <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Cunsult Aphelios</Link>
+                            <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Consult Aphelios</Link>
                         </div>
                     </div>
 
@@ -423,7 +423,7 @@ export default function Pricing(){
                             <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>1 month free support</span></li>
                             <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>Delivery Based on requirement</span></li>
                             </ul>
-                            <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Cunsult Aphelios</Link>
+                            <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Consult Aphelios</Link>
                         </div>
                     </div>
 
@@ -448,7 +448,7 @@ export default function Pricing(){
                             <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>1 month free support</span></li>
                             <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>Delivery Based on requirement</span></li>
                             </ul>
-                            <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Cunsult Aphelios</Link>
+                            <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Consult Aphelios</Link>
                         </div>
                     </div>
 
@@ -491,7 +491,7 @@ export default function Pricing(){
 
 
                         </ul>
-                        <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Cunsult Aphelios</Link>
+                        <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Consult Aphelios</Link>
                     </div>
 
                     <div className="group p-6 relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
@@ -514,7 +514,7 @@ export default function Pricing(){
                             <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>Delivery Based on requirement</span></li>
 
                         </ul>
-                        <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Cunsult Aphelios</Link>
+                        <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Consult Aphelios</Link>
                     </div>
 
                     <div className="group relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
@@ -539,7 +539,7 @@ export default function Pricing(){
                             <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>Delivery Based on requirement</span></li>
 
                             </ul>
-                            <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Cunsult Aphelios</Link>
+                            <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Consult Aphelios</Link>
 
                         </div>
                     </div>
@@ -583,7 +583,7 @@ export default function Pricing(){
                             <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>Submit on Play-store</span></li>
 
                         </ul>
-                        <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Cunsult Aphelios</Link>
+                        <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Consult Aphelios</Link>
                     </div>
 
                     <div className="group p-6 relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
@@ -607,7 +607,7 @@ export default function Pricing(){
                             <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>Submit on App store</span></li>
 
                         </ul>
-                        <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Cunsult Aphelios</Link>
+                        <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Consult Aphelios</Link>
                     </div>
 
                     <div className="group relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
@@ -633,7 +633,7 @@ export default function Pricing(){
                             <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>Submit on Play-store & App Store</span></li>
 
                             </ul>
-                            <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Cunsult Aphelios</Link>
+                            <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Consult Aphelios</Link>
 
                         </div>
                     </div>
@@ -660,7 +660,7 @@ export default function Pricing(){
                             <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>Submit on Play-store & App Store</span></li>
 
                             </ul>
-                            <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Cunsult Aphelios</Link>
+                            <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Consult Aphelios</Link>
 
                         </div>
                     </div>
@@ -701,7 +701,7 @@ export default function Pricing(){
                             <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>Online store promotion</span></li>
 
                         </ul>
-                        <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Cunsult Aphelios</Link>
+                        <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Consult Aphelios</Link>
                     </div>
 
                     <div className="group p-6 relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
@@ -720,7 +720,7 @@ export default function Pricing(){
                             <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>5 Days Delivery</span></li>
                             <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>Online store promotion</span></li>
                         </ul>
-                        <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Cunsult Aphelios</Link>
+                        <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Consult Aphelios</Link>
                     </div>
 
                     <div className="group relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
@@ -743,7 +743,7 @@ export default function Pricing(){
                                 <li className="mb-1 flex ml-0-important"><i className="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>Online store promotion</span></li>
 
                             </ul>
-                            <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Cunsult Aphelios</Link>
+                            <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Consult Aphelios</Link>
 
                             {/* <p className="text-sm text-slate-400 mt-1.5"><span className="text-red-600">*</span>T&C Apply</p> */}
                         </div>
