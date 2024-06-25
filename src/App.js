@@ -5,6 +5,9 @@ import './assets/css/materialdesignicons.min.css';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import Loader from './components/loader';
 import IndexThree from './pages/index-three';
+import BlogPage from './pages/blogPage';
+import Indfive from './pages/index-five';
+
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -26,14 +29,8 @@ function App() {
           ) : (
               <Routes>
                   <Route path='/' exact={true} element={<IndexThree />} />
-                  <Route path='*' element={<Navigate to='/' replace />} />
-
-                  {/* <Route path='/index-one' element={<Index/>}/>
-                  <Route path='/index-two' element={<IndexTwo/>}/>
-                  <Route path='/index-four' element={<IndexFour/>}/>
-                  <Route path='/index-five' element={<IndexFive/>}/>
-                  <Route path='/index-six' element={<IndexSix/>}/>
-                  <Route path='/index-seven' element={<IndexSeven/>}/> */}
+                  <Route path='/blog/:id' element={<BlogPage />} />
+                  <Route path='/blogs/:id' element={<Indfive />} />
               </Routes>
           )}
           <ToastContainer></ToastContainer>

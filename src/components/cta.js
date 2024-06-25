@@ -966,9 +966,9 @@ export default function Cta() {
             <div className="text-center mt-10">
                 <a
                 class="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500 text-white"
-                 href="mailto:about@apheliossolution.com?subject=Developer%20Consultation&body=Hello,%0D%0A%0D%0AI%20would%20like%20to%20book%20a%20developer%20consultation."
+                 href="mailto:about@apheliossolution.com?subject=Developer%20Consultation&body=Hello,%0D%0A%0D%0AI%20would%20like%20to%20hire%20a%20developer%20consultation."
                 >
-                Book a Developer Consultation
+                Hire a Developer Consultation
                 </a>
             </div>
           </div>
