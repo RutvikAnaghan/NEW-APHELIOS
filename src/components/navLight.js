@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import logoDark from '../assets/images/logo-dark.png'
 import logoLight from '../assets/images/logo-light.png'
 import { Link as Link1 } from "react-scroll";
+import { Helmet } from 'react-helmet';
 
 export default function NavLight(){
 
@@ -21,6 +22,37 @@ export default function NavLight(){
     }, []);
    
     return(
+        <>
+         <Helmet>
+        <meta charSet="utf-8" />
+        <title>Aphelios Solution LLP - Software Development Partner</title>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
+        <meta
+          name="title"
+          content="Aphelios Solution LLP - Software Development Partner"
+        />
+        <meta
+          name="description"
+          content="At Aphelios, we are Salesforce CRM consultants and development company providing comprehensive IT solutions."
+        />
+        <meta
+          name="keywords"
+          content="Aphelios, Salesforce development, CRM consulting, web development, IT services, Salesforce CRM, trailhead,salesforce,CRM,Development,consultant,Salesforce,salesforce,salesforcelogin,salesforceCareers,salesforce,trailhead,salesforceCertification,salesforce,trailhead,salesforceJobs,crm,sales,sales,saas,logincrm,customer service,cloud computing,what is crm,crm system,crm software,UI/UX,Designing,Application,AppDevelopment,MobileApp,Website,WebApplication,CrossPlatform,eCommerce,AngularJS,Angular,HTML,CSS,React,ReactNative,IOS,Android"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="English" />
+        <meta name="revisit-after" content="3 days" />
+        <meta name="author" content="Aphelios Solution LLP" />
+        <link rel="canonical" href="https://www.apheliossolution.com" />
+        <link
+          rel="alternate"
+          hrefLang="en"
+          href="https://www.apheliossolution.com"
+        />
+      </Helmet>
         <nav className={`navbar ${scroll ? 'is-sticky' : ''}`} id="navbar">
             <div className="container relative flex flex-wrap items-center justify-between">
                 <Link className="navbar-brand md:me-8" to="/">
@@ -70,5 +102,6 @@ export default function NavLight(){
                 </div>
             </div>
         </nav>
+        </>
     )
 }
