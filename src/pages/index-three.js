@@ -29,6 +29,7 @@ export default function IndexThree() {
   return (
     <>
       <Helmet>
+        <meta name="google-site-verification" content="YTdwCrnCL_jKFS9VQQk8AS_DgBRg8giKnOgQE0--tV4" />
         <meta charSet="utf-8" />
         <title>Aphelios Solution LLP - Software Development Partner</title>
         <meta
