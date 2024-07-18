@@ -1,0 +1,74 @@
+/*======================
+    404 page
+=======================*/
+
+
+.page_404 {
+    padding: 40px 0;
+    background: #fff;
+    font-family: 'Arvo', serif;
+    margin-top: 7%;
+}
+
+.page_404 img {
+    width: 100%;
+}
+
+.four_zero_four_bg {
+
+    background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 400px;
+    background-position: center;
+}
+
+
+.four_zero_four_bg h1 {
+    font-size: 80px;
+}
+
+.four_zero_four_bg h3 {
+    font-size: 80px;
+}
+
+.link_404 {
+    color: #fff !important;
+    padding: 10px 20px;
+    background: #39ac31;
+    margin: 20px 0;
+    display: inline-block;
+}
+
+.contant_box_404 {
+    margin-top: -50px;
+}
+
+
+/* .space-x-1> :not([hidden])~ :not([hidden]) {
+    --tw-space-x-reverse: 0 !important;
+    margin-right: calc(0.25rem * var(--tw-space-x-reverse)) !important;
+    margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse))) !important;
+} */
+
+.tracking-wide {
+    letter-spacing: 0.025em !important;
+}
+
+.items-center {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+.rounded-md {
+    border-radius: 0.375rem !important;
+}
+
+.bg-teal-500 {
+    --tw-bg-opacity: 1 !important;
+    background-color: rgb(22 187 239 / var(--tw-bg-opacity)) !important;
+}
+
+.text-white {
+    --tw-text-opacity: 1 !important;
+    color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}

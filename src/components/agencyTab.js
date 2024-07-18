@@ -28,7 +28,7 @@ export default function AgencyTab() {
         <meta name="language" content="English" />
         <meta name="revisit-after" content="3 days" />
         <meta name="author" content="Aphelios Solution LLP" />
-        <link rel="canonical" href="https://www.apheliossolution.com" />
+        <link rel="canonical" href="https://www.apheliossolution.in" />
         <link
           rel="alternate"
           hrefLang="en"
