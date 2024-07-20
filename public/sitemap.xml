@@ -2,20 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.apheliossolution.in/</loc>
-    <lastmod>2024-07-12</lastmod>
+    <lastmod>2024-07-19</lastmod>
     <changefreq>always</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.apheliossolution.in/blog/</loc>
-    <lastmod>2024-07-12</lastmod>
+    <lastmod>2024-07-19</lastmod>
     <changefreq>always</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.apheliossolution.in/404</loc>
-    <lastmod>2024-07-12</lastmod>
+    <loc>https://www.apheliossolution.in/about-us</loc>
+    <lastmod>2024-07-19</lastmod>
     <changefreq>always</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
+  </url>
+   <url>
+    <loc>https://www.apheliossolution.in/service</loc>
+    <lastmod>2024-07-19</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.9</priority>
+  </url>
+   <url>
+    <loc>https://www.apheliossolution.in/industries</loc>
+    <lastmod>2024-07-19</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.9</priority>
+  </url>
+     <url>
+    <loc>https://www.apheliossolution.in/404</loc>
+    <lastmod>2024-07-19</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.9</priority>
   </url>
 </urlset>

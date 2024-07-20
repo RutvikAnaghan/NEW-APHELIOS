@@ -74,7 +74,7 @@ export default function Navbar(){
                 <div className={`navigation lg_992:order-1 lg_992:flex  ms-auto ${manu ? '' : 'hidden'}`} id="menu-collapse">
                     <ul className="navbar-nav" id="navbar-navlist">
                         <li className="nav-item ms-0 cursor-pointer">
-                            <Link1 className="nav-link" to="home" smooth={true} duration={1000} activeClass='active' spy={true}>Home</Link1>
+                            <Link className="nav-link" to="/" smooth={true} duration={1000} activeClass='active' spy={true}>Home</Link>
                         </li>
                         <li className="nav-item ms-0 cursor-pointer">
                             <Link1 className="nav-link" to="about" smooth={true} duration={1000} activeClass='active' spy={true}>About</Link1>
@@ -83,7 +83,7 @@ export default function Navbar(){
                             <Link1 className="nav-link" to="services" smooth={true} duration={1000} activeClass='active' spy={true}>Services</Link1>
                         </li>
                         <li className="nav-item ms-0 cursor-pointer">
-                            <Link1 className="nav-link" to="review" smooth={true} duration={1000} activeClass='active' spy={true}>Testimonial</Link1>
+                            <Link className="nav-link" id="industries" to="/industries" smooth={true} duration={1000} activeClass='active' spy={true}>Industries</Link>
                         </li>
                         <li className="nav-item ms-0 cursor-pointer">
                             <Link1 className="nav-link" to="pricing" smooth={true} duration={1000} activeClass='active' spy={true}>Pricing</Link1>

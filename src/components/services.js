@@ -73,7 +73,7 @@ export default function Services(){
                             <Icon className="size-48 text-teal-500 opacity-[0.04] dark:opacity-[0.04] group-hover:opacity-10 duration-500" />
                         </div>
                             <div className="mt-4">
-                                <Link to="" className="text-teal-500">Read More <i className="mdi mdi-chevron-right align-middle"></i></Link>
+                                <Link to="/service" className="text-teal-500">Read More <i className="mdi mdi-chevron-right align-middle"></i></Link>
                             </div>
                     </div>
                 );

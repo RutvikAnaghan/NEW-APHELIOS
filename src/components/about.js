@@ -63,7 +63,7 @@ export default function About(){
 
                             <p className="text-slate-400 max-w-xl mb-6">With a team of highly skilled developers, designers, and technology experts, we specialize in delivering customized software applications tailored to meet the unique needs of businesses across various industries. Our expertise spans web development, mobile app development, and CRM solutions, including Salesforce development.</p>
 
-                            <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500 text-white">Read More <i className="mdi mdi-chevron-right align-middle ms-0.5"></i></Link>
+                            <Link to="/about-us" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500 text-white">Read More <i className="mdi mdi-chevron-right align-middle ms-0.5"></i></Link>
                         </div>
                     </div>
                 </div>

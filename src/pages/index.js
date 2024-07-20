@@ -15,6 +15,7 @@ import Pricing from "../components/pricing";
 import GetInTouch from "../components/getInTuoch";
 import Footer from "../components/footer";
 import Switcher from "../components/switcher";
+import Blog from "../components/blog";
 
 import heroImg from "../assets/images/about2.jpg";
 import bg from "../assets/images/bg/2.png";
@@ -30,17 +31,93 @@ export default function HomePage() {
     <>
       <Helmet>
         <title>Aphelios Solution LLP - Software Development Partner</title>
-        <meta name="google-site-verification" content="YTdwCrnCL_jKFS9VQQk8AS_DgBRg8giKnOgQE0--tV4" />
+        <meta
+          name="google-site-verification"
+          content="YTdwCrnCL_jKFS9VQQk8AS_DgBRg8giKnOgQE0--tV4"
+        />
         <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-        <meta name="description" content="Aphelios Solution LLP provides comprehensive IT solutions, including Salesforce CRM consulting and custom software development for various industries." />
-        <meta name="keywords" content="Aphelios, Salesforce development, CRM consulting, web development, IT services, Salesforce CRM, UI/UX, Application Development, Mobile App, Website, eCommerce" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
+        <meta
+          name="description"
+          content="Aphelios Solution LLP provides comprehensive IT solutions, including Salesforce CRM consulting and custom software development for various industries."
+        />
+        <meta
+          name="keywords"
+          content="Aphelios, Salesforce development, CRM consulting, web development, IT services, Salesforce CRM, UI/UX, Application Development, Mobile App, Website, eCommerce, Salesforce development
+,Salesforce migration
+,Salesforce consulting
+,Salesforce implementation
+,Salesforce integration
+,Salesforce customization
+,Salesforce managed services
+,Salesforce support
+,Salesforce solutions
+,Salesforce experts
+,Salesforce Lightning development
+,Salesforce Apex development
+,Salesforce Visualforce development
+,Salesforce API integration
+,Salesforce data migration
+,Salesforce CRM
+,Salesforce automation
+,Salesforce mobile app development
+,Salesforce app development
+,Salesforce cloud services
+,Salesforce for healthcare
+,Salesforce for finance
+,Salesforce for retail
+,Salesforce for education
+,Salesforce for non-profits
+,Salesforce for real estate
+,Salesforce for manufacturing
+,Salesforce for logistics
+,Salesforce for telecom
+,Salesforce for insurance
+,Best Salesforce developers
+,Top Salesforce consultants
+,Certified Salesforce experts
+,Experienced Salesforce developers
+,Leading Salesforce development company
+,Affordable Salesforce services
+,Reliable Salesforce migration
+,Professional Salesforce implementation
+,Custom Salesforce solutions
+,Trusted Salesforce partner
+,Salesforce development in india
+,Salesforce migration services in india
+,Salesforce consultants in india
+,Salesforce development in surat
+,Salesforce migration services in surat
+,Salesforce consultants in surat
+,Salesforce development in Gujarat
+,Salesforce migration services in Gujarat
+,Salesforce consultants in Gujarat
+,Salesforce experts near me
+,Local Salesforce development company
+,How to migrate to Salesforce
+,Benefits of Salesforce development
+,Custom Salesforce app development
+,Salesforce integration best practices
+,Top Salesforce migration tools
+,Salesforce development trends
+,Choosing the right Salesforce consultant
+,Salesforce CRM customization
+,Salesforce Lightning migration
+,Salesforce data migration strategies"
+        />
         <meta name="robots" content="index, follow" />
         <meta name="language" content="English" />
         <meta name="revisit-after" content="7 days" />
         <meta name="author" content="Aphelios Solution LLP" />
         <link rel="canonical" href="https://www.apheliossolution.in" />
-        <link rel="alternate" hrefLang="en" href="https://www.apheliossolution.com" />
+        <link
+          rel="alternate"
+          hrefLang="en"
+          href="https://www.apheliossolution.com"
+        />
       </Helmet>
 
       <Navbar />
@@ -52,6 +129,7 @@ export default function HomePage() {
         <Cta />
         <Client />
         <Pricing />
+        <Blog />
         <div id="get-in-touch">
           <GetInTouch />
         </div>
@@ -90,16 +168,16 @@ function HeroContent({ setOpen }) {
   return (
     <div className="lg:col-span-7 md:me-6">
       <h1 className="font-semibold lg:leading-normal leading-normal tracking-wide text-4xl mb-5">
-        Reliable Custom <br />
-        Software Development
+        {/* Reliable Custom <br /> */}
+        {/* Software Development */}
+        Salesforce & Data experts
         <br />
-        Partner in{" "}
-        <IndustryHighlight />
+        in <IndustryHighlight />
       </h1>
       <p className="text-slate-400 text-lg max-w-xl">
-        Whether you need a robust web presence or a customized
-        Salesforce platform, we deliver innovative solutions that meet
-        your unique business needs.
+        Whether you need a robust web presence or a customized Salesforce
+        platform, we deliver innovative solutions that meet your unique business
+        needs.
       </p>
       <div className="relative mt-6 space-x-1">
         <Link
@@ -119,9 +197,16 @@ function IndustryHighlight() {
   return (
     <span className="text-teal-500 font-bold textMove">
       <div className="text-container">
-        {["Ecommerce", "Fintech", "Healthcare", "Travel & Hospitality", "Real Estate"].map((industry, index) => (
+        {[
+          "Ecommerce",
+          "Fintech",
+          "Healthcare",
+          "Travel & Hospitality",
+          "Real Estate",
+        ].map((industry, index) => (
           <span key={index} className="mb-2" style={{ "--i": index }}>
-            {industry}<br />
+            {industry}
+            <br />
           </span>
         ))}
       </div>
@@ -167,8 +252,16 @@ function StrategicPartner() {
       <h5 className="text-lg font-semibold mb-3 ml-3">Strategic Partner</h5>
       <div className="flex justify-between mt-3 mb-2">
         <RouterLink target="_blank" to="https://www.advayan.com/">
-          <img src={advayan} className="inline-block dark:hidden" alt="Advayan logo" />
-          <img src={advayanwhite} className="hidden dark:inline-block" alt="Advayan logo" />
+          <img
+            src={advayan}
+            className="inline-block dark:hidden"
+            alt="Advayan logo"
+          />
+          <img
+            src={advayanwhite}
+            className="hidden dark:inline-block"
+            alt="Advayan logo"
+          />
         </RouterLink>
       </div>
     </div>

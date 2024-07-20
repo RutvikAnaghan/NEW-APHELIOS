@@ -65,19 +65,19 @@ export default function AgencyTab() {
               </div>
               <div class="statastic-block">
                 <h4 class="stats-number">
-                  <span>42</span>+
+                  <span>23</span>+
                 </h4>
                 <p className="dark:text-white">Talented IT Professionals</p>
               </div>
               <div class="statastic-block">
                 <h4 class="stats-number">
-                  <span>600</span>+
+                  <span>215</span>+
                 </h4>
                 <p className="dark:text-white">Successful Projects</p>
               </div>
               <div class="statastic-block">
                 <h4 class="stats-number">
-                  <span>21</span>+
+                  <span>11</span>+
                 </h4>
                 <p className="dark:text-white">Countries Served</p>
               </div>
