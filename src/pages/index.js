@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link as RouterLink } from "react-router-dom";
-import { Link } from "react-scroll";
+import { Link, Element } from "react-scroll";
 import { Helmet } from "react-helmet";
 import ModalVideo from "react-modal-video";
 import "../../node_modules/react-modal-video/scss/modal-video.scss";
@@ -120,19 +120,54 @@ export default function HomePage() {
         />
       </Helmet>
 
-      <Navbar />
+      {/* <Navbar />
       <main>
+      <div id="home">
         <HeroSection setOpen={setOpen} />
+      </div>
+      <div id="about">
         <About />
+      </div>
+      <div id="services">
         <Services />
+      </div>
         <AgencyTab />
         <Cta />
         <Client />
+        <div id="pricing">
         <Pricing />
+        </div>
+        <div id="blog">
         <Blog />
+        </div>
         <div id="get-in-touch">
           <GetInTouch />
         </div>
+      </main> */}
+
+<Navbar />
+      <main>
+        <Element name="home">
+          <HeroSection />
+        </Element>
+        <Element name="about">
+          <About />
+        </Element>
+        <Element name="services">
+          <Services />
+        </Element>
+        <AgencyTab />
+        <Cta />
+        <Client />
+        <Element name="pricing">
+          <Pricing />
+        </Element>
+        <Element name="blog">
+          <Blog />
+        </Element>
+        <Element name="get-in-touch">
+          <GetInTouch />
+        </Element>
       </main>
       <Footer />
       <Switcher />

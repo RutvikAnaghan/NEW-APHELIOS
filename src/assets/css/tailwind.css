@@ -2974,3 +2974,52 @@ html[dir=rtl] .tns-visually-hidden {
 .justify-content-center{
   justify-content: center !important;
 }
+
+.max-w{
+  max-width: 200px !important;
+}
+
+.mar-l{
+  margin-left: 120px !important;
+}
+
+.mar-r{
+  margin-right: 120px !important;
+}
+
+.onhover {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.onhover:hover {
+  cursor: pointer;
+  box-shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.07);
+  transform: translateY(-5px);
+}
+
+.min-vh-100{
+  min-height: 100% !important;
+}
+
+.imgcenter{
+  margin-left: 25%;
+}
+
+/* Tailwind CSS */
+.bg-slate-50 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-slate-800 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* CSS */
+section {
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  background-size: cover; /* Scales the background image to cover the entire section */
+  background-position: center; /* Centers the background image */
+}

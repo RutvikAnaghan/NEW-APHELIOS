@@ -7,10 +7,17 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import Switcher from "../components/switcher";
 import GetInTouch from "../components/getInTuoch";
-import aboutImage from "../assets/images/about.jpg";
-import CountUp from "react-countup";
 
-export default function HomePage() {
+import sfbg from "../assets/images/sfbg2.png";
+import sfimg from "../assets/images/techicon/sfdc/salesforce-2.svg";
+
+import { salesforceIndustryData, WebIndustryData, MobileIndustryData } from "../data/data";
+export default function Industries() {
+  const [activeTab, setActiveTab] = useState("Salesforce"); // Default active tab
+
+  const handleTabClick = (tabId) => {
+    setActiveTab(tabId);
+  };
   return (
     <>
       <Helmet>
@@ -44,136 +51,187 @@ export default function HomePage() {
         />
       </Helmet>
       <main>
-        <section className="relative md:py-24 py-16" id="industries">
+        <section
+          className="relative md:py-24 py-16 bg-slate-50 dark:bg-slate-800"
+          id="industry"
+          style={{ backgroundImage: `url(${sfbg})` }}
+        >
           <div className="container relative">
-          <div className="grid grid-cols-1 pb-6 text-center">
-              <h3 className="font-semibold text-2xl leading-normal mb-4">
-                Industry Solutions
-              </h3>
-            </div>
-            <div className="Salesforce">
-              <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 mt-6 gap-6">
-                {/* <div className="group p-6 relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
-                  <h6 className="font-semibold mb-5 text-xl">
-                    Salesforce Lightning Development
-                  </h6>
-                  <p className="text-slate-400 max-w-xl mb-6">
-                    Harness the power of Salesforce Lightning to create dynamic
-                    and responsive applications. Our experienced developers
-                    specialize in building Lightning components and applications
-                    that enhance user experience and streamline business
-                    processes.
+            <div className="grid md:grid-cols-12 grid-cols-1 items-center gap-6">
+              <div className="md:col-span-6">
+                <div className="lg:me-6">
+                  <div className="relative">
+                  <img
+                          src={sfimg}
+                          className="text-lg font-medium max-w imgcenter"
+                          alt=""
+                        />
+                  </div>
+                </div>
+              </div>
+
+              <div className="md:col-span-6">
+                <div className="lg:ms-10">
+                  <h3 className="font-semibold text-2xl leading-normal mb-4">
+                    Comprehensive Industry Solutions by Aphelios Solution
+                  </h3>
+
+                  <p className="max-w-xl mb-6">
+                    At Aphelios Solution, we are committed to delivering
+                    top-notch Salesforce development and Salesforce migration
+                    services. Our team of expert Salesforce developers is
+                    recognized as the best in the industry, ensuring your
+                    business maximizes the full potential of the Salesforce
+                    platform. With our certified Salesforce experts, you can
+                    trust us to provide tailored solutions that drive
+                    efficiency, growth, and success.
                   </p>
                 </div>
-
-                <div className="group p-6 relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
-                  <h6 className="font-semibold mb-5 text-xl">
-                    Salesforce Apex Development
-                  </h6>
-                  <p className="text-slate-400 max-w-xl mb-6">
-                    Unlock the full potential of Salesforce with custom Apex
-                    development. Our team delivers robust and scalable solutions
-                    tailored to your specific requirements, ensuring seamless
-                    integration and enhanced functionality.
-                  </p>
-                </div>
-
-                <div className="group p-6 relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
-                  <h6 className="font-semibold mb-5 text-xl">
-                    Salesforce Visualforce Development
-                  </h6>
-                  <p className="text-slate-400 max-w-xl mb-6">
-                    Enhance your Salesforce applications with custom Visualforce
-                    pages. We design and develop Visualforce solutions that
-                    provide a personalized user interface and improve overall
-                    application performance.
-                  </p>
-                </div>
-
-                <div className="group p-6 relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
-                  <h6 className="font-semibold mb-5 text-xl">
-                    Salesforce API Integration{" "}
-                  </h6>
-                  <p className="text-slate-400 max-w-xl mb-6">
-                    Integrate Salesforce with your existing systems seamlessly
-                    using our API integration services. We ensure smooth data
-                    flow and synchronization across platforms, enhancing
-                    operational efficiency and data accuracy.
-                  </p>
-                </div> */}
-
-<div className="group p-6 relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
-  <h6 className="font-semibold mb-5 text-xl">Salesforce for Healthcare</h6>
-  <p className="text-slate-400 max-w-xl mb-6">
-    Transform patient care and streamline healthcare operations with Salesforce for Healthcare. Our solutions enable healthcare providers to manage patient records, schedule appointments, and track patient interactions efficiently. We help you implement HIPAA-compliant systems that improve patient engagement and care coordination.
-  </p>
-</div>
-
-<div className="group p-6 relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
-  <h6 className="font-semibold mb-5 text-xl">Salesforce for Finance</h6>
-  <p className="text-slate-400 max-w-xl mb-6">
-    Enhance financial services with Salesforce for Finance. Our customized solutions help financial institutions manage customer relationships, streamline operations, and ensure compliance with industry regulations. From wealth management to loan processing, we provide tools that drive efficiency and growth.
-  </p>
-</div>
-
-<div className="group p-6 relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
-  <h6 className="font-semibold mb-5 text-xl">Salesforce for Retail</h6>
-  <p className="text-slate-400 max-w-xl mb-6">
-    Revolutionize the retail experience with Salesforce for Retail. Our services help retailers manage customer data, optimize supply chains, and create personalized marketing campaigns. We enable seamless integration with e-commerce platforms, providing a unified view of customer interactions across all channels.
-  </p>
-</div>
-
-<div className="group p-6 relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
-  <h6 className="font-semibold mb-5 text-xl">Salesforce for Education</h6>
-  <p className="text-slate-400 max-w-xl mb-6">
-    Empower educational institutions with Salesforce for Education. We provide solutions for managing student information, admissions, and alumni relations. Our services help educational institutions enhance student engagement, streamline administrative processes, and improve communication with stakeholders.
-  </p>
-</div>
-
-<div className="group p-6 relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
-  <h6 className="font-semibold mb-5 text-xl">Salesforce for Non-Profits</h6>
-  <p className="text-slate-400 max-w-xl mb-6">
-    Maximize impact and efficiency with Salesforce for Non-Profits. Our solutions help non-profit organizations manage donor relationships, track fundraising activities, and measure program outcomes. We provide tools that enable better resource allocation and improved stakeholder engagement.
-  </p>
-</div>
-
-<div className="group p-6 relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
-  <h6 className="font-semibold mb-5 text-xl">Salesforce for Real Estate</h6>
-  <p className="text-slate-400 max-w-xl mb-6">
-    Optimize property management and sales with Salesforce for Real Estate. Our customized solutions help real estate professionals manage listings, track leads, and streamline transactions. We provide tools that enhance client relationships and improve operational efficiency.
-  </p>
-</div>
-
-<div className="group p-6 relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
-  <h6 className="font-semibold mb-5 text-xl">Salesforce for Manufacturing</h6>
-  <p className="text-slate-400 max-w-xl mb-6">
-    Drive operational excellence with Salesforce for Manufacturing. Our solutions help manufacturers manage supply chains, track production processes, and optimize inventory. We enable real-time visibility into operations, improving decision-making and productivity.
-  </p>
-</div>
-
-<div className="group p-6 relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
-  <h6 className="font-semibold mb-5 text-xl">Salesforce for Logistics</h6>
-  <p className="text-slate-400 max-w-xl mb-6">
-    Enhance logistics and supply chain management with Salesforce for Logistics. Our services help logistics companies manage transportation, track shipments, and optimize routes. We provide tools that improve operational efficiency and customer satisfaction.
-  </p>
-</div>
-
-<div className="group p-6 relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
-  <h6 className="font-semibold mb-5 text-xl">Salesforce for Telecom</h6>
-  <p className="text-slate-400 max-w-xl mb-6">
-    Transform telecommunications with Salesforce for Telecom. Our solutions help telecom companies manage customer interactions, track service requests, and optimize network performance. We enable seamless integration with billing systems and provide tools for better customer service.
-  </p>
-</div>
-
-<div className="group p-6 relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
-  <h6 className="font-semibold mb-5 text-xl">Salesforce for Insurance</h6>
-  <p className="text-slate-400 max-w-xl mb-6">
-    Streamline insurance processes with Salesforce for Insurance. Our customized solutions help insurance companies manage policies, track claims, and improve customer interactions. We provide tools that enhance operational efficiency and ensure compliance with industry regulations.
-  </p>
-</div>
-
               </div>
             </div>
+          </div>
+        </section>
+
+        <section
+          className="relative md:py-24 py-16"
+          id="industries"
+        >
+          <div className="navDiv text-center">
+            <a
+              className={`hover-line dark:text-white cursor-pointer ${
+                activeTab === "Salesforce" ? "active" : ""
+              }`}
+              onClick={() => handleTabClick("Salesforce")}
+            >
+              Salesforce Development
+            </a>
+            <a
+              className={`hover-line dark:text-white cursor-pointer ${
+                activeTab === "Web" ? "active" : ""
+              }`}
+              onClick={() => handleTabClick("Web")}
+            >
+              Web Development
+            </a>
+            <a
+              className={`hover-line dark:text-white cursor-pointer ${
+                activeTab === "Mobile" ? "active" : ""
+              }`}
+              onClick={() => handleTabClick("Mobile")}
+            >
+              Mobile Development
+            </a>
+
+            <div className="animation start-hom"></div>
+          </div>
+
+          <div className="tab-content">
+            {activeTab === "Salesforce" && (
+              <div className="container relative">
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-6 mt-6">
+                  { salesforceIndustryData.map((item, index) => {
+                    let Icon = item.icon;
+                    return (
+                      <div
+                        className="group rounded-md shadow dark:shadow-gray-700 relative bg-white dark:bg-slate-900 p-6 overflow-hidden min-h-385"
+                        key={index}
+                      >
+                        <div className="flex items-center justify-center size-14 -rotate-45 bg-gradient-to-r from-transparent to-teal-500/10 text-teal-500 text-center rounded-full group-hover:bg-teal-500/10 duration-500">
+                          <Icon className="size-6 rotate-45" />
+                        </div>
+
+                        <div className="content mt-6 relative z-1">
+                          <Link
+                            to=""
+                            className="title text-lg font-semibold hover:text-teal-500 dark:text-teal-500"
+                          >
+                            {item.title}
+                          </Link>
+                          <p className="text-slate-400 mt-3">
+                          {item.desc}
+                          </p>
+                        </div>
+
+                        <div className="absolute bottom-0 -end-16">
+                          <Icon className="size-48 text-teal-500 opacity-[0.04] dark:opacity-[0.04] group-hover:opacity-10 duration-500" />
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+            {activeTab === "Web" && (
+              <div className="container relative">
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-6 mt-6">
+                  { WebIndustryData.map((item, index) => {
+                    let Icon = item.icon;
+                    return (
+                      <div
+                        className="group rounded-md shadow dark:shadow-gray-700 relative bg-white dark:bg-slate-900 p-6 overflow-hidden min-h-385"
+                        key={index}
+                      >
+                        <div className="flex items-center justify-center size-14 -rotate-45 bg-gradient-to-r from-transparent to-teal-500/10 text-teal-500 text-center rounded-full group-hover:bg-teal-500/10 duration-500">
+                          <Icon className="size-6 rotate-45" />
+                        </div>
+
+                        <div className="content mt-6 relative z-1">
+                          <Link
+                            to=""
+                            className="title text-lg font-semibold hover:text-teal-500 dark:text-teal-500"
+                          >
+                            {item.title}
+                          </Link>
+                          <p className="text-slate-400 mt-3">
+                          {item.desc}
+                          </p>
+                        </div>
+
+                        <div className="absolute bottom-0 -end-16">
+                          <Icon className="size-48 text-teal-500 opacity-[0.04] dark:opacity-[0.04] group-hover:opacity-10 duration-500" />
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+             {activeTab === "Mobile" && (
+              <div className="container relative">
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-6 mt-6">
+                  { MobileIndustryData.map((item, index) => {
+                    let Icon = item.icon;
+                    return (
+                      <div
+                        className="group rounded-md shadow dark:shadow-gray-700 relative bg-white dark:bg-slate-900 p-6 overflow-hidden min-h-385"
+                        key={index}
+                      >
+                        <div className="flex items-center justify-center size-14 -rotate-45 bg-gradient-to-r from-transparent to-teal-500/10 text-teal-500 text-center rounded-full group-hover:bg-teal-500/10 duration-500">
+                          <Icon className="size-6 rotate-45" />
+                        </div>
+
+                        <div className="content mt-6 relative z-1">
+                          <Link
+                            to=""
+                            className="title text-lg font-semibold hover:text-teal-500 dark:text-teal-500"
+                          >
+                            {item.title}
+                          </Link>
+                          <p className="text-slate-400 mt-3">
+                          {item.desc}
+                          </p>
+                        </div>
+
+                        <div className="absolute bottom-0 -end-16">
+                          <Icon className="size-48 text-teal-500 opacity-[0.04] dark:opacity-[0.04] group-hover:opacity-10 duration-500" />
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+            
           </div>
         </section>
 

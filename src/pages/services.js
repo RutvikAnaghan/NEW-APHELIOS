@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link as RouterLink } from "react-router-dom";
 import { Link } from "react-scroll";
 import { Helmet } from "react-helmet";
 
@@ -7,10 +6,22 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import Switcher from "../components/switcher";
 import GetInTouch from "../components/getInTuoch";
-import aboutImage from "../assets/images/about.jpg";
-import CountUp from "react-countup";
+import herobg from "../assets/images/sfbg5.png";
+import {
+  SalesforceData,
+  WebDevelopmentData,
+  MobileAppDevelopmentData,
+  WebDesignData,
+  CMS_EcommerceData,
+  PaymentShippingAPIData,
+} from "../data/data";
 
-export default function HomePage() {
+export default function Services() {
+  const [activeTab, setActiveTab] = useState("Salesforce"); // Default active tab
+
+  const handleTabClick = (tabId) => {
+    setActiveTab(tabId);
+  };
   return (
     <>
       <Helmet>
@@ -44,275 +55,309 @@ export default function HomePage() {
         />
       </Helmet>
       <main>
-        <section className="relative md:py-24 py-16" id="services">
-          <div className="container relative mt-5">
+        <section
+          className="relative md:py-24 py-16 bg-slate-50 dark:bg-slate-800"
+          id="services"
+          style={{  backgroundImage: `url(${herobg})`,
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center', }}
+        >
+          <div className="container relative">
             <div className="grid md:grid-cols-12 grid-cols-1 items-center gap-6">
-              <div className="md:col-span-6">
-                {/* <div className="lg:me-8">
-                  <div className="relative">
-                    <img src={aboutImage} className="rounded-full shadow dark:shadow-gray-700" alt=""/> 
-
-                    <div className="absolute top-1/2 -translate-y-1/2 start-0 end-0 mx-auto size-56 flex justify-center items-center bg-white dark:bg-slate-900 rounded-full shadow dark:shadow-gray-700">
-                      <div className="text-center">
-                        <span className="text-teal-500 text-2xl font-semibold mb-0 block">
-                          <CountUp
-                            className="counter-value text-6xl font-semibold"
-                            start={0}
-                            end={7}
-                          />
-                          +
-                        </span>
-                        <span className="font-semibold block mt-2">
-                          Years <br /> Experience
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
-              </div>
-
-              <div className="md:col-span-6">
+              <div className="md:col-span-9">
                 <div className="lg:ms-8">
                   <h6 className="text-teal-500 text-sm font-semibold uppercase mb-2">
                     Aphelios Solution
                   </h6>
                   <h3 className="font-semibold text-2xl leading-normal mb-4">
-                    Salesforce Services
+                    Transform Your Business with Cutting-Edge Technology
+                    Solutions
                   </h3>
 
-                  <p className="text-slate-400 max-w-xl mb-6">
-                    Welcome to Aphelios Solution, your trusted partner in
-                    Salesforce development and migration. Our team of Salesforce
-                    experts is dedicated to providing top-notch services that
-                    cater to your unique business needs. Explore our
-                    comprehensive range of services designed to help you
-                    leverage the full potential of Salesforce.
+                  <p className="max-w-xl mb-6">
+                    At Aphelios Solution, we provide a comprehensive range of
+                    technology services designed to elevate your business
+                    operations. Our expert team specializes in delivering
+                    top-notch solutions across various domains, ensuring that
+                    your business stays ahead in a competitive landscape.
+                    Explore our offerings to discover how we can help you
+                    achieve your goals.
                   </p>
-
-                {/* <p className="text-slate-400 max-w-xl mb-6">Welcome to Aphelios Solution, your go-to partner for exceptional website development and design services. We offer a diverse range of solutions tailored to meet your specific business needs, ensuring that your online presence is not only visually appealing but also highly functional and efficient. Explore our comprehensive suite of services designed to help you build, enhance, and maintain outstanding digital solutions.
-                </p> */}
-                  {/* <Link to="/who-we-are" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500 text-white">Read More <i className="mdi mdi-chevron-right align-middle ms-0.5"></i></Link> */}
+                  <Link
+                    to="mailto:about@apheliossolution.com?subject=Custom%20requirements%20service&body=Hello,%0D%0A%0D%0AI%20would%20like%20to%20book%20a%20Custom%20service."
+                    className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5 cursor-pointer"
+                  >
+                    Get Started Today
+                  </Link>
                 </div>
               </div>
+              {/* <div className="md:col-span-3">
+                <div className="lg:me-8">
+                  <div className="relative">
+                    <img src={sfimg} alt="" />
+                  </div>
+                </div>
+              </div> */}
             </div>
           </div>
         </section>
 
-        <section
-          className="relative md:py-24 py-16 bg-slate-50 dark:bg-slate-800"
-          id="services"
-        >
-          <div className="container relative mt-5">
-            <div className="grid grid-cols-1 pb-6 text-center">
-              <h3 className="font-semibold text-2xl leading-normal mb-4">
-                Salesforce Development
-              </h3>
-            </div>
-            <div className="Salesforce">
-              <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 mt-6 gap-6">
-                <div className="group p-6 relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
-                  <h6 className="font-semibold mb-5 text-xl">
-                    Salesforce Lightning Development
-                  </h6>
-                  <p className="text-slate-400 max-w-xl mb-6">
-                    Harness the power of Salesforce Lightning to create dynamic
-                    and responsive applications. Our experienced developers
-                    specialize in building Lightning components and applications
-                    that enhance user experience and streamline business
-                    processes.
-                  </p>
-                </div>
-
-                <div className="group p-6 relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
-                  <h6 className="font-semibold mb-5 text-xl">
-                    Salesforce Apex Development
-                  </h6>
-                  <p className="text-slate-400 max-w-xl mb-6">
-                    Unlock the full potential of Salesforce with custom Apex
-                    development. Our team delivers robust and scalable solutions
-                    tailored to your specific requirements, ensuring seamless
-                    integration and enhanced functionality.
-                  </p>
-                </div>
-
-                <div className="group p-6 relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
-                  <h6 className="font-semibold mb-5 text-xl">
-                    Salesforce Visualforce Development
-                  </h6>
-                  <p className="text-slate-400 max-w-xl mb-6">
-                    Enhance your Salesforce applications with custom Visualforce
-                    pages. We design and develop Visualforce solutions that
-                    provide a personalized user interface and improve overall
-                    application performance.
-                  </p>
-                </div>
-
-                <div className="group p-6 relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
-                  <h6 className="font-semibold mb-5 text-xl">
-                    Salesforce API Integration{" "}
-                  </h6>
-                  <p className="text-slate-400 max-w-xl mb-6">
-                    Integrate Salesforce with your existing systems seamlessly
-                    using our API integration services. We ensure smooth data
-                    flow and synchronization across platforms, enhancing
-                    operational efficiency and data accuracy.
-                  </p>
-                </div>
-              </div>
-            </div>
+        <section className="relative md:py-24 py-16" id="industries">
+          <div className="navDiv text-center">
+            <a
+              className={`hover-line dark:text-white cursor-pointer ${
+                activeTab === "Salesforce" ? "active" : ""
+              }`}
+              onClick={() => handleTabClick("Salesforce")}
+            >
+              Salesforce Development
+            </a>
+            <a
+              className={`hover-line dark:text-white cursor-pointer ${
+                activeTab === "Web" ? "active" : ""
+              }`}
+              onClick={() => handleTabClick("Web")}
+            >
+              Website Development
+            </a>
+            <a
+              className={`hover-line dark:text-white cursor-pointer ${
+                activeTab === "Mobile" ? "active" : ""
+              }`}
+              onClick={() => handleTabClick("Mobile")}
+            >
+              Mobile App Development
+            </a>
+            <a
+              className={`hover-line dark:text-white cursor-pointer ${
+                activeTab === "Design" ? "active" : ""
+              }`}
+              onClick={() => handleTabClick("Design")}
+            >
+              Design
+            </a>
+            <a
+              className={`hover-line dark:text-white cursor-pointer ${
+                activeTab === "CMS" ? "active" : ""
+              }`}
+              onClick={() => handleTabClick("CMS")}
+            >
+              CMS & Ecommerce Development
+            </a>
+            <a
+              className={`hover-line dark:text-white cursor-pointer ${
+                activeTab === "Payment" ? "active" : ""
+              }`}
+              onClick={() => handleTabClick("Payment")}
+            >
+              Payment and shipping API integration solutions
+            </a>
+            <div className="animation start-hom"></div>
           </div>
 
-          <div className="container relative mt-5">
-            <div className="grid grid-cols-1 pb-6 text-center">
-              <h3 className="font-semibold text-2xl leading-normal mb-4">
-                Salesforce Migration
-              </h3>
-            </div>
-            <div className="Salesforce">
-              <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 mt-6 gap-6">
-                <div className="group p-6 relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
-                  <h6 className="font-semibold mb-5 text-xl">
-                    Salesforce Data Migration
-                  </h6>
-                  <p className="text-slate-400 max-w-xl mb-6">
-                    Move your data to Salesforce with confidence. Our data
-                    migration experts handle the entire process, from planning
-                    and mapping to execution and validation, ensuring data
-                    integrity and minimal disruption to your operations.
-                  </p>
+          <div className="tab-content">
+            {activeTab === "Salesforce" && (
+              <div className="container relative">
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-6 mt-6">
+                  {SalesforceData.map((item, index) => {
+                    let Icon = item.icon;
+                    return (
+                      <div
+                        className="group rounded-md shadow dark:shadow-gray-700 relative bg-white dark:bg-slate-900 p-6 overflow-hidden min-h-385"
+                        key={index}
+                      >
+                        <div className="flex items-center justify-center size-14 -rotate-45 bg-gradient-to-r from-transparent to-teal-500/10 text-teal-500 text-center rounded-full group-hover:bg-teal-500/10 duration-500">
+                          <Icon className="size-6 rotate-45" />
+                        </div>
+
+                        <div className="content mt-6 relative z-1">
+                          <Link
+                            to=""
+                            className="title text-lg font-semibold hover:text-teal-500 dark:text-teal-500"
+                          >
+                            {item.title}
+                          </Link>
+                          <p className="text-slate-400 mt-3">{item.desc}</p>
+                        </div>
+
+                        <div className="absolute bottom-0 -end-16">
+                          <Icon className="size-48 text-teal-500 opacity-[0.04] dark:opacity-[0.04] group-hover:opacity-10 duration-500" />
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
-            </div>
-          </div>
+            )}
+            {activeTab === "Web" && (
+              <div className="container relative">
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-6 mt-6">
+                  {WebDevelopmentData.map((item, index) => {
+                    let Icon = item.icon;
+                    return (
+                      <div
+                        className="group rounded-md shadow dark:shadow-gray-700 relative bg-white dark:bg-slate-900 p-6 overflow-hidden min-h-385"
+                        key={index}
+                      >
+                        <div className="flex items-center justify-center size-14 -rotate-45 bg-gradient-to-r from-transparent to-teal-500/10 text-teal-500 text-center rounded-full group-hover:bg-teal-500/10 duration-500">
+                          <Icon className="size-6 rotate-45" />
+                        </div>
 
-          <div className="container relative mt-5">
-            <div className="grid grid-cols-1 pb-6 text-center">
-              <h3 className="font-semibold text-2xl leading-normal mb-4">
-                Salesforce CRM
-              </h3>
-            </div>
-            <div className="Salesforce">
-              <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 mt-6 gap-6">
-                <div className="group p-6 relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
-                  <h6 className="font-semibold mb-5 text-xl">
-                    Salesforce CRM Solutions{" "}
-                  </h6>
-                  <p className="text-slate-400 max-w-xl mb-6">
-                    Optimize your customer relationship management with our
-                    Salesforce CRM solutions. We help you implement and
-                    customize Salesforce CRM to align with your business
-                    processes, improving customer engagement and satisfaction.
-                  </p>
+                        <div className="content mt-6 relative z-1">
+                          <Link
+                            to=""
+                            className="title text-lg font-semibold hover:text-teal-500 dark:text-teal-500"
+                          >
+                            {item.title}
+                          </Link>
+                          <p className="text-slate-400 mt-3">{item.desc}</p>
+                        </div>
+
+                        <div className="absolute bottom-0 -end-16">
+                          <Icon className="size-48 text-teal-500 opacity-[0.04] dark:opacity-[0.04] group-hover:opacity-10 duration-500" />
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
-            </div>
-          </div>
+            )}
+            {activeTab === "Mobile" && (
+              <div className="container relative">
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-6 mt-6">
+                  {MobileAppDevelopmentData.map((item, index) => {
+                    let Icon = item.icon;
+                    return (
+                      <div
+                        className="group rounded-md shadow dark:shadow-gray-700 relative bg-white dark:bg-slate-900 p-6 overflow-hidden min-h-385"
+                        key={index}
+                      >
+                        <div className="flex items-center justify-center size-14 -rotate-45 bg-gradient-to-r from-transparent to-teal-500/10 text-teal-500 text-center rounded-full group-hover:bg-teal-500/10 duration-500">
+                          <Icon className="size-6 rotate-45" />
+                        </div>
 
-          <div className="container relative mt-5">
-            <div className="grid grid-cols-1 pb-6 text-center">
-              <h3 className="font-semibold text-2xl leading-normal mb-4">
-                Salesforce Automation
-              </h3>
-            </div>
-            <div className="Salesforce">
-              <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 mt-6 gap-6">
-                <div className="group p-6 relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
-                  <h6 className="font-semibold mb-5 text-xl">
-                    Salesforce Automation
-                  </h6>
-                  <p className="text-slate-400 max-w-xl mb-6">
-                    Automate your business processes with Salesforce automation
-                    tools. Our team designs and implements automated workflows
-                    and processes that increase productivity, reduce errors, and
-                    save time.
-                  </p>
+                        <div className="content mt-6 relative z-1">
+                          <Link
+                            to=""
+                            className="title text-lg font-semibold hover:text-teal-500 dark:text-teal-500"
+                          >
+                            {item.title}
+                          </Link>
+                          <p className="text-slate-400 mt-3">{item.desc}</p>
+                        </div>
+
+                        <div className="absolute bottom-0 -end-16">
+                          <Icon className="size-48 text-teal-500 opacity-[0.04] dark:opacity-[0.04] group-hover:opacity-10 duration-500" />
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
-            </div>
-          </div>
+            )}
 
-          <div className="container relative mt-5">
-            <div className="grid grid-cols-1 pb-6 text-center">
-              <h3 className="font-semibold text-2xl leading-normal mb-4">
-                Salesforce Mobile App Development
-              </h3>
-            </div>
-            <div className="Salesforce">
-              <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 mt-6 gap-6">
-                <div className="group p-6 relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
-                  <h6 className="font-semibold mb-5 text-xl">
-                    Salesforce Mobile App Development
-                  </h6>
-                  <p className="text-slate-400 max-w-xl mb-6">
-                    Stay connected on the go with our Salesforce mobile app
-                    development services. We create custom mobile applications
-                    that provide access to Salesforce data and functionality
-                    anytime, anywhere.
-                  </p>
+            {activeTab === "Design" && (
+              <div className="container relative">
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-6 mt-6">
+                  {WebDesignData.map((item, index) => {
+                    let Icon = item.icon;
+                    return (
+                      <div
+                        className="group rounded-md shadow dark:shadow-gray-700 relative bg-white dark:bg-slate-900 p-6 overflow-hidden min-h-385"
+                        key={index}
+                      >
+                        <div className="flex items-center justify-center size-14 -rotate-45 bg-gradient-to-r from-transparent to-teal-500/10 text-teal-500 text-center rounded-full group-hover:bg-teal-500/10 duration-500">
+                          <Icon className="size-6 rotate-45" />
+                        </div>
+
+                        <div className="content mt-6 relative z-1">
+                          <Link
+                            to=""
+                            className="title text-lg font-semibold hover:text-teal-500 dark:text-teal-500"
+                          >
+                            {item.title}
+                          </Link>
+                          <p className="text-slate-400 mt-3">{item.desc}</p>
+                        </div>
+
+                        <div className="absolute bottom-0 -end-16">
+                          <Icon className="size-48 text-teal-500 opacity-[0.04] dark:opacity-[0.04] group-hover:opacity-10 duration-500" />
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
-            </div>
-          </div>
+            )}
 
-          <div className="container relative mt-5">
-            <div className="grid grid-cols-1 pb-6 text-center">
-              <h3 className="font-semibold text-2xl leading-normal mb-4">
-                Salesforce App Development
-              </h3>
-            </div>
-            <div className="Salesforce">
-              <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 mt-6 gap-6">
-                <div className="group p-6 relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
-                  <h6 className="font-semibold mb-5 text-xl">
-                    Salesforce App Development
-                  </h6>
-                  <p className="text-slate-400 max-w-xl mb-6">
-                    Develop custom Salesforce applications tailored to your
-                    business needs. Our expertise in Salesforce app development
-                    ensures you get solutions that enhance your operational
-                    efficiency and drive business growth.
-                  </p>
+            {activeTab === "CMS" && (
+              <div className="container relative">
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-6 mt-6">
+                  {CMS_EcommerceData.map((item, index) => {
+                    let Icon = item.icon;
+                    return (
+                      <div
+                        className="group rounded-md shadow dark:shadow-gray-700 relative bg-white dark:bg-slate-900 p-6 overflow-hidden min-h-385"
+                        key={index}
+                      >
+                        <div className="flex items-center justify-center size-14 -rotate-45 bg-gradient-to-r from-transparent to-teal-500/10 text-teal-500 text-center rounded-full group-hover:bg-teal-500/10 duration-500">
+                          <Icon className="size-6 rotate-45" />
+                        </div>
+
+                        <div className="content mt-6 relative z-1">
+                          <Link
+                            to=""
+                            className="title text-lg font-semibold hover:text-teal-500 dark:text-teal-500"
+                          >
+                            {item.title}
+                          </Link>
+                          <p className="text-slate-400 mt-3">{item.desc}</p>
+                        </div>
+
+                        <div className="absolute bottom-0 -end-16">
+                          <Icon className="size-48 text-teal-500 opacity-[0.04] dark:opacity-[0.04] group-hover:opacity-10 duration-500" />
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
-            </div>
-          </div>
+            )}
 
-          <div className="container relative mt-5">
-            <div className="grid grid-cols-1 pb-6 text-center">
-              <h3 className="font-semibold text-2xl leading-normal mb-4">
-                Salesforce Cloud Services
-              </h3>
-            </div>
-            <div className="Salesforce">
-              <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 mt-6 gap-6">
-                <div className="group p-6 relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md">
-                  <h6 className="font-semibold mb-5 text-xl">
-                    Salesforce Cloud Services
-                  </h6>
-                  <p className="text-slate-400 max-w-xl mb-6">
-                    Leverage the power of the cloud with our Salesforce cloud
-                    services. We offer comprehensive cloud solutions, including
-                    setup, configuration, and management, to ensure your
-                    Salesforce environment is secure, scalable, and
-                    high-performing.
-                  </p>
+            {activeTab === "Payment" && (
+              <div className="container relative">
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-6 mt-6">
+                  {PaymentShippingAPIData.map((item, index) => {
+                    let Icon = item.icon;
+                    return (
+                      <div
+                        className="group rounded-md shadow dark:shadow-gray-700 relative bg-white dark:bg-slate-900 p-6 overflow-hidden min-h-385"
+                        key={index}
+                      >
+                        <div className="flex items-center justify-center size-14 -rotate-45 bg-gradient-to-r from-transparent to-teal-500/10 text-teal-500 text-center rounded-full group-hover:bg-teal-500/10 duration-500">
+                          <Icon className="size-6 rotate-45" />
+                        </div>
+
+                        <div className="content mt-6 relative z-1">
+                          <Link
+                            to=""
+                            className="title text-lg font-semibold hover:text-teal-500 dark:text-teal-500"
+                          >
+                            {item.title}
+                          </Link>
+                          <p className="text-slate-400 mt-3">{item.desc}</p>
+                        </div>
+
+                        <div className="absolute bottom-0 -end-16">
+                          <Icon className="size-48 text-teal-500 opacity-[0.04] dark:opacity-[0.04] group-hover:opacity-10 duration-500" />
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-        <section className="relative md:py-24 py-16" id="services">
-          <div className="container relative mt-5">
-            <h3 className="font-semibold text-2xl leading-normal mb-4">
-              Our Mission
-            </h3>
-
-            <p className="text-slate-400 max-w-xl mb-6">
-              Our mission is to empower businesses with innovative Salesforce
-              solutions that drive growth, efficiency, and success. We are
-              dedicated to providing high-quality, affordable services that meet
-              the unique needs of our clients.
-            </p>
+            )}
           </div>
         </section>
         <div id="get-in-touch">
