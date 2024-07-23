@@ -3023,3 +3023,86 @@ section {
   background-size: cover; /* Scales the background image to cover the entire section */
   background-position: center; /* Centers the background image */
 }
+
+/* src/assets/css/WebDesignTipsPage.css */
+.blogsection {
+  font-family: 'Roboto', sans-serif;
+  padding: 40px;
+  background-color: transparent;
+  color: #333;
+}
+
+.blogsection .container {
+  /* max-width: 800px; */
+  margin: 80px auto;
+}
+
+.blogsection header h1 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+.blogsection .content {
+  line-height: 1.8;
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.blogsection .tip h2 {
+  font-size: 1.8em;
+  margin-top: 30px;
+  color: #007bff;
+}
+
+.blogsection .tip p {
+  margin-top: 15px;
+}
+
+.blogsection .tip ol li {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.blogsection .conclusion {
+  margin-top: 40px;
+  font-size: 1.2em;
+  color: #333;
+  font-weight: 500;
+  border-top: 2px solid #007bff;
+  padding-top: 20px;
+}
+
+.blogsection .cta {
+  margin-top: 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  color: #007bff;
+}
+
+.blogsection .author-bio {
+  margin-top: 30px;
+  font-size: 1em;
+  color: #666;
+  border-top: 2px solid #007bff;
+  padding-top: 20px;
+}
+
+.blogsection .author-bio a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.blogsection .author-bio a:hover {
+  text-decoration: underline;
+}
+
+.blogsection p {
+  margin: 15px 0;
+}

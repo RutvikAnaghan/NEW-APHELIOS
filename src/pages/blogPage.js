@@ -1,63 +1,93 @@
-
-import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import blogService from "../services/blogService";
-import { Link } from "react-router-dom";
-
-import NavLight from "../components/navLight";
+// src/WebDesignTipsPage.js
+import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
+import "../assets/css/tailwind.css";
+import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import Switcher from "../components/switcher";
 
-export default function BlogPage(){
+// Dummy data
+const data = {
+    title: "10 Tips for Effective Web Design That Converts",
+    introduction: "<p>In <strong><em>today's digital age</em></strong>, having an aesthetically pleasing website isn't enough. It's crucial to design a <strong>website that not only attracts visitors but also converts them into customers</strong>. In this post, we'll share ten essential tips for effective web design that drives conversions.</p>",
+    subheading1: "1. Understand Your Audience",
+    content1: "<p>To <strong>design a website</strong> that converts, you must first understand <strong>your target audience</strong>...</p>",
+    subheading2: "2. Keep it Simple",
+    bulletPoints: "<ol><li><strong>Use plenty of white space</strong></li><li><strong>Stick to a minimal color palette</strong></li><li><strong>Use easy-to-read fonts</strong></li></ol>",
+    subheading3: "3. Optimize for Mobile",
+    content2: "<p>A <strong>clean, uncluttered design</strong> helps visitors focus on <strong>what's important</strong>...</p>",
+    content3: "<p>With the increasing number of <strong>mobile users</strong>, it's essential that your <strong>website is mobile-friendly</strong>...</p>",
+    conclusion: "<p>Implementing these web design tips can <strong>significantly improve</strong> your site's conversion rates. Remember, <strong>a successful website is not just about looks but also about functionality and user experience</strong>. Start applying these tips today to see a noticeable difference.</p>",
+    cta: "Ready to transform your website? Contact us today for a free consultation!",
+    metaDescription: "<p><strong>Learn 10 essential tips</strong> for effective web design that boosts <em><u>conversions</u></em>. Discover how to create a user-friendly, mobile-optimized website that turns visitors into customers.</p>",
+    authorBio: "<p><strong><em>John Doe</em></strong><em> is a seasoned web designer with </em><strong><em>over 10 years of experience in creating user-friendly and conversion-focused websites</em></strong><em>. Follow him on </em><a href=\"#\" rel=\"noopener noreferrer\" target=\"_blank\"><em>Twitter</em></a><em> and </em><a href=\"#\" rel=\"noopener noreferrer\" target=\"_blank\"><em>LinkedIn</em></a><em>.</em></p>",
+    image: {}
+};
 
-    const { id } = useParams();
-    const [blog, setBlog] = useState(null);
+const BlogPage = () => {
+    const [content, setContent] = useState(null);
+    const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        const fetchBlog = async () => {
-            try {
-                const data = await blogService.getBlogById(id);
-                setBlog(data);
-            } catch (error) {
-                setError("There was an error fetching the blog post.");
-                console.error("Error fetching blog post:", error);
-            }
-        };
+        // Simulate fetching data
+        setTimeout(() => {
+            setContent(data);
+            setLoading(false);
+        }, 1000);
+    }, []);
 
-        fetchBlog();
-    }, [id]);
+    if (loading) {
+        return <div>Loading...</div>;
+    }
 
     if (error) {
-        return <p className="text-red-500 text-center">{error}</p>;
+        return <div>Error: {error.message}</div>;
     }
 
-    if (!blog) {
-        return <p className="text-center">Loading...</p>;
-    }
-
-
-    return(
+    return (
         <>
-        <NavLight/>
-        <section className="relative items-center overflow-hidden bg-gradient-to-t to-teal-6002 via-teal-600/50 from-transparent" id="blog">
-            <div className="container relative">
-                <div className="grid grid-cols-1 md:mt-48 mt-5 text-center">
-                    <h4 className="font-bold lg:leading-normal leading-normal tracking-wide text-4xl lg:text-5xl capitalize text-white mb-5">{blog.title}</h4>
-                    <div className="flex items-center mb-4">
-                        <span className="text-white/70 text-lg max-w-xl mx-auto">Posted On : {new Date(blog.publishedAt).toLocaleDateString()}</span>
-                        <span className="text-white/70 text-lg max-w-xl mx-auto">Posted By : {blog.author}</span>
-                    </div>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>{content.title}</title>
+                <meta name="description" content={content.metaDescription.replace(/<[^>]+>/g, '')} />
+                <meta name="keywords" content="web design, conversions, user-friendly, mobile-optimized, tips" />
+                <meta name="author" content="John Doe" />
+            </Helmet>
+            <Navbar />
+            <main>
 
-                    <div className="overflow-hidden mt-8 flex justify-content-center mb-10">
-                        <img src={`http://localhost:3000/${blog.imageUrl}`} alt={blog.title} className="mb-4 rounded-md shadow" />
-                    </div>
-                    <div className="flex items-center mb-20">
-                        <p className="text-slate-400">{blog.content}</p>
+            <section className="blogsection">
+                <div className="container">
+                    <header>
+                        <h1>{content.title}</h1>
+                    </header>
+                    <div className="content">
+                        <div className="introduction" dangerouslySetInnerHTML={{ __html: content.introduction }} />
+                        <div className="tip">
+                            <h2>{content.subheading1}</h2>
+                            <div dangerouslySetInnerHTML={{ __html: content.content1 }} />
+                        </div>
+                        <div className="tip">
+                            <h2>{content.subheading2}</h2>
+                            <div dangerouslySetInnerHTML={{ __html: content.bulletPoints }} />
+                        </div>
+                        <div className="tip">
+                            <h2>{content.subheading3}</h2>
+                            <div dangerouslySetInnerHTML={{ __html: content.content2 }} />
+                            <div dangerouslySetInnerHTML={{ __html: content.content3 }} />
+                        </div>
+                        <div className="conclusion" dangerouslySetInnerHTML={{ __html: content.conclusion }} />
+                        <div className="cta">{content.cta}</div>
+                        <div className="author-bio" dangerouslySetInnerHTML={{ __html: content.authorBio }} />
                     </div>
                 </div>
-            </div>
-        </section>
-        <Footer/>
+            </section>
+            </main>
+            <Footer />
+            <Switcher />
         </>
-    )
-}
+    );
+};
+
+export default BlogPage;
