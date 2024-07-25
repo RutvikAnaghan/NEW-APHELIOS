@@ -15,10 +15,24 @@ export default function HomePage() {
     subheading1: "",
     content1: "",
     subheading2: "",
+    content2: "",
     bulletPoints: "",
     subheading3: "",
-    content2: "",
     content3: "",
+    subheading4: "",
+    content4: "",
+    subheading5: "",
+    content5: "",
+    subheading6: "",
+    content6: "",
+    subheading7: "",
+    content7: "",
+    subheading8: "",
+    content8: "",
+    subheading9: "",
+    content9: "",
+    subheading10: "",
+    content10: "",
     conclusion: "",
     cta: "",
     metaDescription: "",
@@ -50,10 +64,24 @@ export default function HomePage() {
       subheading1: "",
       content1: "",
       subheading2: "",
+      content2: "",
       bulletPoints: "",
       subheading3: "",
-      content2: "",
       content3: "",
+      subheading4: "",
+      content4: "",
+      subheading5: "",
+      content5: "",
+      subheading6: "",
+      content6: "",
+      subheading7: "",
+      content7: "",
+      subheading8: "",
+      content8: "",
+      subheading9: "",
+      content9: "",
+      subheading10: "",
+      content10: "",
       conclusion: "",
       cta: "",
       metaDescription: "",
@@ -215,6 +243,195 @@ export default function HomePage() {
                 name="content3"
                 value={formData.content3}
                 onChange={(value) => handleQuillChange("content3", value)}
+                required
+              />
+            </div>
+
+
+            <div style={styles.formGroup}>
+              <label style={styles.label} htmlFor="subheading4">
+                Subheading 4
+              </label>
+              <input
+                style={styles.input}
+                type="text"
+                id="subheading4"
+                name="subheading4"
+                value={formData.subheading4}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div style={styles.formGroup}>
+              <label style={styles.label} htmlFor="content4">
+                Content 4
+              </label>
+              <ReactQuill
+                id="content4"
+                name="content4"
+                value={formData.content4}
+                onChange={(value) => handleQuillChange("content4", value)}
+                required
+              />
+            </div>
+
+            <div style={styles.formGroup}>
+              <label style={styles.label} htmlFor="subheading5">
+                Subheading 5
+              </label>
+              <input
+                style={styles.input}
+                type="text"
+                id="subheading5"
+                name="subheading5"
+                value={formData.subheading5}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div style={styles.formGroup}>
+              <label style={styles.label} htmlFor="content5">
+                Content 5
+              </label>
+              <ReactQuill
+                id="content5"
+                name="content5"
+                value={formData.content5}
+                onChange={(value) => handleQuillChange("content5", value)}
+                required
+              />
+            </div>
+
+            <div style={styles.formGroup}>
+              <label style={styles.label} htmlFor="subheading6">
+                Subheading 6
+              </label>
+              <input
+                style={styles.input}
+                type="text"
+                id="subheading6"
+                name="subheading6"
+                value={formData.subheading6}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div style={styles.formGroup}>
+              <label style={styles.label} htmlFor="content6">
+                Content 6
+              </label>
+              <ReactQuill
+                id="content6"
+                name="content6"
+                value={formData.content6}
+                onChange={(value) => handleQuillChange("content6", value)}
+                required
+              />
+            </div>
+
+            <div style={styles.formGroup}>
+              <label style={styles.label} htmlFor="subheading7">
+                Subheading 7
+              </label>
+              <input
+                style={styles.input}
+                type="text"
+                id="subheading7"
+                name="subheading7"
+                value={formData.subheading7}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div style={styles.formGroup}>
+              <label style={styles.label} htmlFor="content7">
+                Content 7
+              </label>
+              <ReactQuill
+                id="content7"
+                name="content7"
+                value={formData.content7}
+                onChange={(value) => handleQuillChange("content7", value)}
+                required
+              />
+            </div>
+
+            <div style={styles.formGroup}>
+              <label style={styles.label} htmlFor="subheading8">
+                Subheading 8
+              </label>
+              <input
+                style={styles.input}
+                type="text"
+                id="subheading8"
+                name="subheading8"
+                value={formData.subheading8}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div style={styles.formGroup}>
+              <label style={styles.label} htmlFor="content8">
+                Content 8
+              </label>
+              <ReactQuill
+                id="content8"
+                name="content8"
+                value={formData.content8}
+                onChange={(value) => handleQuillChange("content8", value)}
+                required
+              />
+            </div>
+
+            <div style={styles.formGroup}>
+              <label style={styles.label} htmlFor="subheading9">
+                Subheading 9
+              </label>
+              <input
+                style={styles.input}
+                type="text"
+                id="subheading9"
+                name="subheading9"
+                value={formData.subheading9}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div style={styles.formGroup}>
+              <label style={styles.label} htmlFor="content9">
+                Content 9
+              </label>
+              <ReactQuill
+                id="content9"
+                name="content9"
+                value={formData.content9}
+                onChange={(value) => handleQuillChange("content9", value)}
+                required
+              />
+            </div>
+            <div style={styles.formGroup}>
+              <label style={styles.label} htmlFor="subheading10">
+                Subheading 10
+              </label>
+              <input
+                style={styles.input}
+                type="text"
+                id="subheading10"
+                name="subheading10"
+                value={formData.subheading10}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div style={styles.formGroup}>
+              <label style={styles.label} htmlFor="content10">
+                Content 10
+              </label>
+              <ReactQuill
+                id="content10"
+                name="content10"
+                value={formData.content10}
+                onChange={(value) => handleQuillChange("content10", value)}
                 required
               />
             </div>

@@ -38,7 +38,7 @@ function App() {
                   <Route path='/service' element={<ServicePage />} />
                   <Route path='/industries' element={<Industries />} />
                   <Route path='/aphelios/admin/blog-post-form' element={<BlogPostForm />} />
-                  <Route path="/web-design-tips" element={<BlogPage />} />
+                  <Route path="/blog-page" element={<BlogPage />} />
                   <Route path="/404" element={<NotFoundPage />} />
                   <Route path="*" element={<Navigate to="/404" />} />
               </Routes>
