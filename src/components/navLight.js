@@ -78,28 +78,28 @@ export default function NavLight(){
                 <div className={`navigation lg_992:order-1 lg_992:flex  ms-auto ${manu ? '' : 'hidden'}`} id="menu-collapse">
                     <ul className="navbar-nav nav-light sidebar-nav" id="navbar-navlist">
                         <li className="nav-item">
-                            <Link1  className="nav-link ms-0" to="home" smooth={true} duration={1000} activeClass='active' spy={true}>Home</Link1>
+                            <Link1  className="nav-link ms-0" to="home" smooth={true} duration={1000} activeclassName='active' spy={true}>Home</Link1>
                         </li>
                         <li className="nav-item">
-                            <Link1 className="nav-link ms-0" to="about" smooth={true} duration={1000} activeClass='active' spy={true}>About</Link1>
+                            <Link1 className="nav-link ms-0" to="about" smooth={true} duration={1000} activeclassName='active' spy={true}>About</Link1>
                         </li>
                         <li className="nav-item">
-                            <Link1 className="nav-link ms-0" to="services" smooth={true} duration={1000} activeClass='active' spy={true}>Services</Link1>
+                            <Link1 className="nav-link ms-0" to="services" smooth={true} duration={1000} activeclassName='active' spy={true}>Services</Link1>
                         </li>
                         <li className="nav-item">
-                            <Link1 className="nav-link ms-0" to="review" smooth={true} duration={1000} activeClass='active' spy={true}>Testimonial</Link1>
+                            <Link1 className="nav-link ms-0" to="review" smooth={true} duration={1000} activeclassName='active' spy={true}>Testimonial</Link1>
                         </li>
                         <li className="nav-item">
-                            <Link1 className="nav-link ms-0" to="pricing" smooth={true} duration={1000} activeClass='active' spy={true}>Pricing</Link1>
+                            <Link1 className="nav-link ms-0" to="pricing" smooth={true} duration={1000} activeclassName='active' spy={true}>Pricing</Link1>
                         </li>
                         {/* <li className="nav-item">
-                            <Link1 className="nav-link ms-0" to="blog" smooth={true} duration={1000} activeClass='active' spy={true}>Blogs</Link1>
+                            <Link1 className="nav-link ms-0" to="blog" smooth={true} duration={1000} activeclassName='active' spy={true}>Blogs</Link1>
                         </li> */}
                         <li className="nav-item">
-                            <Link1 className="nav-link ms-0" to="techTalk" smooth={true} duration={1000} activeClass='active' spy={true}>Tech Talk</Link1>
+                            <Link1 className="nav-link ms-0" to="techTalk" smooth={true} duration={1000} activeclassName='active' spy={true}>Tech Talk</Link1>
                         </li>
                         <li className="nav-item">
-                            <Link1 className="nav-link ms-0" to="contact" smooth={true} duration={1000} activeClass='active' spy={true}>Contact us</Link1>
+                            <Link1 className="nav-link ms-0" to="contact" smooth={true} duration={1000} activeclassName='active' spy={true}>Contact us</Link1>
                         </li>
                     </ul>
                 </div>

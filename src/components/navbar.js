@@ -74,25 +74,25 @@
     //                 <div className={`navigation lg_992:order-1 lg_992:flex  ms-auto ${manu ? '' : 'hidden'}`} id="menu-collapse">
     //                     <ul className="navbar-nav" id="navbar-navlist">
     //                         <li className="nav-item ms-0 cursor-pointer">
-    //                             <Link className="nav-link" id="home" to="/" smooth={true} duration={1000} activeClass='active' spy={true}>Home</Link>
+    //                             <Link className="nav-link" id="home" to="/" smooth={true} duration={1000} activeclassName='active' spy={true}>Home</Link>
     //                         </li>
     //                         <li className="nav-item ms-0 cursor-pointer">
-    //                             <Link className="nav-link" id="about" to="about" smooth={true} duration={1000} activeClass='active' spy={true}>About</Link>
+    //                             <Link className="nav-link" id="about" to="about" smooth={true} duration={1000} activeclassName='active' spy={true}>About</Link>
     //                         </li>
     //                         <li className="nav-item ms-0 cursor-pointer">
-    //                             <Link className="nav-link" id="services" to="services" smooth={true} duration={1000} activeClass='active' spy={true}>Services</Link>
+    //                             <Link className="nav-link" id="services" to="services" smooth={true} duration={1000} activeclassName='active' spy={true}>Services</Link>
     //                         </li>
     //                         <li className="nav-item ms-0 cursor-pointer">
-    //                             <Link className="nav-link" id="industries" to="/industries" smooth={true} duration={1000} activeClass='active' spy={true}>Industries</Link>
+    //                             <Link className="nav-link" id="industries" to="/industries" smooth={true} duration={1000} activeclassName='active' spy={true}>Industries</Link>
     //                         </li>
     //                         <li className="nav-item ms-0 cursor-pointer">
-    //                             <Link className="nav-link" id="pricing" to="pricing" smooth={true} duration={1000} activeClass='active' spy={true}>Pricing</Link>
+    //                             <Link className="nav-link" id="pricing" to="pricing" smooth={true} duration={1000} activeclassName='active' spy={true}>Pricing</Link>
     //                         </li>
     //                         <li className="nav-item ms-0 cursor-pointer">
-    //                             <Link className="nav-link" id="blog" to="blog" smooth={true} duration={1000} activeClass='active' spy={true}>Blogs</Link>
+    //                             <Link className="nav-link" id="blog" to="blog" smooth={true} duration={1000} activeclassName='active' spy={true}>Blogs</Link>
     //                         </li>
     //                         <li className="nav-item ms-0 cursor-pointer">
-    //                             <Link className="nav-link" id="get-in-touch" to="get-in-touch" smooth={true} duration={1000} activeClass='active' spy={true}>Contact us</Link>
+    //                             <Link className="nav-link" id="get-in-touch" to="get-in-touch" smooth={true} duration={1000} activeclassName='active' spy={true}>Contact us</Link>
     //                         </li>
     //                     </ul>
     //                 </div>
@@ -207,7 +207,7 @@
                       smooth={true}
                       duration={1000}
                       spy={true}
-                      activeClass="active"
+                      activeclassName="active"
                       onClick={() => handleScrollLinkClick("")}
                     >
                       Home
@@ -220,7 +220,7 @@
                       smooth={true}
                       duration={1000}
                       spy={true}
-                      activeClass="active"
+                      activeclassName="active"
                       onClick={() => handleScrollLinkClick("")}
                     >
                       About
@@ -233,7 +233,7 @@
                       smooth={true}
                       duration={1000}
                       spy={true}
-                      activeClass="active"
+                      activeclassName="active"
                       onClick={() => handleScrollLinkClick("")}
                     >
                       Services
@@ -251,7 +251,7 @@
                       smooth={true}
                       duration={1000}
                       spy={true}
-                      activeClass="active"
+                      activeclassName="active"
                       onClick={() => handleScrollLinkClick("")}
                     >
                       Pricing
@@ -264,7 +264,7 @@
                       smooth={true}
                       duration={1000}
                       spy={true}
-                      activeClass="active"
+                      activeclassName="active"
                       onClick={() => handleScrollLinkClick("")}
                     >
                       Blogs
@@ -277,7 +277,7 @@
                       smooth={true}
                       duration={1000}
                       spy={true}
-                      activeClass="active"
+                      activeclassName="active"
                       onClick={() => handleScrollLinkClick("")}
                     >
                       Contact us

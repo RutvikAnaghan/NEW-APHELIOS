@@ -260,7 +260,7 @@ function HeroImage() {
         />
         <div className="overflow-hidden after:content-[''] after:absolute after:h-10 after:w-10 after:bg-teal-500/20 after:top-0 after:start-0 after:-z-1 after:rounded-lg after:animate-[spin_10s_linear_infinite]"></div>
         <SalesforceFeature />
-        <StrategicPartner />
+        {/* <StrategicPartner />  */}
       </div>
     </div>
   );
@@ -281,24 +281,24 @@ function SalesforceFeature() {
   );
 }
 
-function StrategicPartner() {
-  return (
-    <div className="absolute top-16 md:-end-10 -end-5 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 w-48 m-3">
-      <h5 className="text-lg font-semibold mb-3 ml-3">Strategic Partner</h5>
-      <div className="flex justify-between mt-3 mb-2">
-        <RouterLink target="_blank" to="https://www.advayan.com/">
-          <img
-            src={advayan}
-            className="inline-block dark:hidden"
-            alt="Advayan logo"
-          />
-          <img
-            src={advayanwhite}
-            className="hidden dark:inline-block"
-            alt="Advayan logo"
-          />
-        </RouterLink>
-      </div>
-    </div>
-  );
-}
+// function StrategicPartner() {
+//   return (
+//     // <div className="absolute top-16 md:-end-10 -end-5 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 w-48 m-3">
+//     //   <h5 className="text-lg font-semibold mb-3 ml-3">Strategic Partner</h5>
+//     //   <div className="flex justify-between mt-3 mb-2">
+//     //     <RouterLink target="_blank" to="https://www.advayan.com/">
+//     //       <img
+//     //         src={advayan}
+//     //         className="inline-block dark:hidden"
+//     //         alt="Advayan logo"
+//     //       />
+//     //       <img
+//     //         src={advayanwhite}
+//     //         className="hidden dark:inline-block"
+//     //         alt="Advayan logo"
+//     //       />
+//     //     </RouterLink>
+//     //   </div>
+//     // </div>
+//   );
+// }

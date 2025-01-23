@@ -7,7 +7,7 @@
 	.st1{fill:#35495E;}
 </style>
 <g>
-	<path id="path4" class="st0" d="M71.6,20L65,31.6L58.4,20H36.2L65,70l28.8-50H71.6z"/>
-	<path id="path6" class="st1" d="M71.6,20L65,31.6L58.4,20H47.7L65,50l17.3-30H71.6z"/>
+	<path id="path4" className="st0" d="M71.6,20L65,31.6L58.4,20H36.2L65,70l28.8-50H71.6z"/>
+	<path id="path6" className="st1" d="M71.6,20L65,31.6L58.4,20H47.7L65,50l17.3-30H71.6z"/>
 </g>
 </svg>

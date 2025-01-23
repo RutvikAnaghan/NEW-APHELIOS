@@ -11,6 +11,9 @@ import ServicePage from './pages/services';
 import Industries from './pages/industries';
 import BlogPostForm from './pages/blogPostForm';
 import BlogPage from './pages/blogPage'
+import Fail from './pages/Fail';
+import Success from './pages/Success';
+import Status from './pages/Status';
 
 
 import { ToastContainer } from 'react-toastify';
@@ -40,6 +43,9 @@ function App() {
                   <Route path='/aphelios/admin/blog-post-form' element={<BlogPostForm />} />
                   <Route path="/blog-page" element={<BlogPage />} />
                   <Route path="/404" element={<NotFoundPage />} />
+                  <Route path="/fail" element={<Fail/>} />
+                  <Route path="/success" element={<Success/>} />
+                  <Route path="/status" element={<Status/>} />
                   <Route path="*" element={<Navigate to="/404" />} />
               </Routes>
           )}

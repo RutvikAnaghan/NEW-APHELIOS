@@ -54,29 +54,29 @@ export default function AgencyTab() {
             to enhance business results.
           </p>
         </div>
-        <div class="row mt-10">
-          <div class="col-12">
-            <div class="statastic-wrapper">
-              <div class="statastic-block">
-                <h4 class="stats-number">
+        <div className="row mt-10">
+          <div className="col-12">
+            <div className="statastic-wrapper">
+              <div className="statastic-block">
+                <h4 className="stats-number">
                   <span>7</span>+
                 </h4>
                 <p className="dark:text-white">Years of Experience</p>
               </div>
-              <div class="statastic-block">
-                <h4 class="stats-number">
+              <div className="statastic-block">
+                <h4 className="stats-number">
                   <span>23</span>+
                 </h4>
                 <p className="dark:text-white">Talented IT Professionals</p>
               </div>
-              <div class="statastic-block">
-                <h4 class="stats-number">
+              <div className="statastic-block">
+                <h4 className="stats-number">
                   <span>215</span>+
                 </h4>
                 <p className="dark:text-white">Successful Projects</p>
               </div>
-              <div class="statastic-block">
-                <h4 class="stats-number">
+              <div className="statastic-block">
+                <h4 className="stats-number">
                   <span>11</span>+
                 </h4>
                 <p className="dark:text-white">Countries Served</p>

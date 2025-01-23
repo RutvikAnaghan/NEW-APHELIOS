@@ -173,10 +173,10 @@ export default function Cta() {
             <div className="tab-content">
               {activeTab === "Salesforce" && (
                 <div className="tech-list-animated">
-                  <ul class="tech-list">
+                  <ul className="tech-list">
                     <li>
                       <a>
-                        <div class="tech-icon">
+                        <div className="tech-icon">
                           <img
                             src={sfdc}
                             alt="Salesforce"
@@ -187,13 +187,13 @@ export default function Cta() {
                             fetchpriority="low"
                           />
                         </div>
-                        <div class="text-slate-400 tech-title ">Salesforce Development</div>
+                        <div className="text-slate-400 tech-title ">Salesforce Development</div>
                       </a>
                     </li>
 
                     <li>
                       <a>
-                        <div class="tech-icon">
+                        <div className="tech-icon">
                           <img
                             src={sfdc}
                             alt="Salesforce"
@@ -204,13 +204,13 @@ export default function Cta() {
                             fetchpriority="low"
                           />
                         </div>
-                        <div class="text-slate-400 tech-title ">Salesforce Lightning</div>
+                        <div className="text-slate-400 tech-title ">Salesforce Lightning</div>
                       </a>
                     </li>
 
                     <li>
                       <a>
-                        <div class="tech-icon">
+                        <div className="tech-icon">
                           <img
                             src={sfdc}
                             alt="Salesforce"
@@ -221,13 +221,13 @@ export default function Cta() {
                             fetchpriority="low"
                           />
                         </div>
-                        <div class="text-slate-400 tech-title ">Salesforce Vlocity</div>
+                        <div className="text-slate-400 tech-title ">Salesforce Vlocity</div>
                       </a>
                     </li>
 
                     <li>
                       <a>
-                        <div class="tech-icon">
+                        <div className="tech-icon">
                           <img
                             src={sfdc}
                             alt="Salesforce"
@@ -238,13 +238,13 @@ export default function Cta() {
                             fetchpriority="low"
                           />
                         </div>
-                        <div class="text-slate-400 tech-title ">Salesforce Sales Cloud</div>
+                        <div className="text-slate-400 tech-title ">Salesforce Sales Cloud</div>
                       </a>
                     </li>
 
                     <li>
                       <a>
-                        <div class="tech-icon">
+                        <div className="tech-icon">
                           <img
                             src={sfdc}
                             alt="Salesforce"
@@ -255,13 +255,13 @@ export default function Cta() {
                             fetchpriority="low"
                           />
                         </div>
-                        <div class="text-slate-400 tech-title ">Salesforce Service Cloud</div>
+                        <div className="text-slate-400 tech-title ">Salesforce Service Cloud</div>
                       </a>
                     </li>
 
                     <li>
                       <a>
-                        <div class="tech-icon">
+                        <div className="tech-icon">
                           <img
                             src={sfdc}
                             alt="Salesforce"
@@ -272,13 +272,13 @@ export default function Cta() {
                             fetchpriority="low"
                           />
                         </div>
-                        <div class="text-slate-400 tech-title ">Salesforce Pardot</div>
+                        <div className="text-slate-400 tech-title ">Salesforce Pardot</div>
                       </a>
                     </li>
 
                     <li>
                       <a>
-                        <div class="tech-icon">
+                        <div className="tech-icon">
                           <img
                             src={sfdc}
                             alt="Salesforce"
@@ -289,13 +289,13 @@ export default function Cta() {
                             fetchpriority="low"
                           />
                         </div>
-                        <div class="text-slate-400 tech-title ">Salesforce Integration</div>
+                        <div className="text-slate-400 tech-title ">Salesforce Integration</div>
                       </a>
                     </li>
 
                     <li>
                       <a>
-                        <div class="tech-icon">
+                        <div className="tech-icon">
                           <img
                             src={sfdc}
                             alt="Salesforce"
@@ -306,13 +306,13 @@ export default function Cta() {
                             fetchpriority="low"
                           />
                         </div>
-                        <div class="text-slate-400 tech-title ">Salesforce Consulting</div>
+                        <div className="text-slate-400 tech-title ">Salesforce Consulting</div>
                       </a>
                     </li>
 
                     <li>
                       <a>
-                        <div class="tech-icon">
+                        <div className="tech-icon">
                           <img
                             src={sfdc}
                             alt="Salesforce"
@@ -323,13 +323,13 @@ export default function Cta() {
                             fetchpriority="low"
                           />
                         </div>
-                        <div class="text-slate-400 tech-title ">Salesforce AppExchange</div>
+                        <div className="text-slate-400 tech-title ">Salesforce AppExchange</div>
                       </a>
                     </li>
 
                     <li>
                       <a>
-                        <div class="tech-icon">
+                        <div className="tech-icon">
                           <img
                             src={sfdc}
                             alt="Salesforce"
@@ -340,13 +340,13 @@ export default function Cta() {
                             fetchpriority="low"
                           />
                         </div>
-                        <div class="text-slate-400 tech-title ">Salesforce Maintenance & Support</div>
+                        <div className="text-slate-400 tech-title ">Salesforce Maintenance & Support</div>
                       </a>
                     </li>
 
                     <li>
                       <a>
-                        <div class="tech-icon">
+                        <div className="tech-icon">
                           <img
                             src={sfdc}
                             alt="Salesforce"
@@ -357,7 +357,7 @@ export default function Cta() {
                             fetchpriority="low"
                           />
                         </div>
-                        <div class="text-slate-400 tech-title ">Salesforce Implementation</div>
+                        <div className="text-slate-400 tech-title ">Salesforce Implementation</div>
                       </a>
                     </li>
                   </ul>
@@ -365,10 +365,10 @@ export default function Cta() {
               )}
               {activeTab === "FrontEnd" && (
                 <div className="tech-list-animated">
-                  <ul class="tech-list">
+                  <ul className="tech-list">
                     <li>
                       <a>
-                        <div class="tech-icon">
+                        <div className="tech-icon">
                           <img
                             src={angular}
                             alt="Angular Front End"
@@ -379,12 +379,12 @@ export default function Cta() {
                             fetchpriority="low"
                           />
                         </div>
-                        <div class="text-slate-400 tech-title ">Angular</div>
+                        <div className="text-slate-400 tech-title ">Angular</div>
                       </a>
                     </li>
                     <li>
                       <a>
-                        <div class="tech-icon">
+                        <div className="tech-icon">
                           <img
                             src={react}
                             alt="React Front End"
@@ -395,11 +395,11 @@ export default function Cta() {
                             fetchpriority="low"
                           />
                         </div>
-                        <div class="text-slate-400 tech-title">React</div>
+                        <div className="text-slate-400 tech-title">React</div>
                       </a>
                     </li>
                     <li>
-                      <div class="tech-icon">
+                      <div className="tech-icon">
                         <img
                           src={vue}
                           alt="Vue Front End"
@@ -410,10 +410,10 @@ export default function Cta() {
                           fetchpriority="low"
                         />
                       </div>
-                      <div class="text-slate-400 tech-title ">Vue</div>
+                      <div className="text-slate-400 tech-title ">Vue</div>
                     </li>
                     <li>
-                      <div class="tech-icon">
+                      <div className="tech-icon">
                         <img
                           src={next}
                           alt="Next Front End"
@@ -424,10 +424,10 @@ export default function Cta() {
                           fetchpriority="low"
                         />
                       </div>
-                      <div class="text-slate-400 tech-title ">Next</div>
+                      <div className="text-slate-400 tech-title ">Next</div>
                     </li>
                     <li>
-                      <div class="tech-icon">
+                      <div className="tech-icon">
                         <img
                           src={nuxtJs}
                           alt="NuxtJS Front End"
@@ -438,17 +438,17 @@ export default function Cta() {
                           fetchpriority="low"
                         />
                       </div>
-                      <div class="text-slate-400 tech-title ">NuxtJS</div>
+                      <div className="text-slate-400 tech-title ">NuxtJS</div>
                     </li>
                   </ul>
                 </div>
               )}
               {activeTab === "BackEnd" && (
                 <div className="tech-list-animated"> 
-                  <ul class="tech-list">
+                  <ul className="tech-list">
                     <li>
                       <a>
-                        <div class="tech-icon">
+                        <div className="tech-icon">
                           <img
                             src={nodejs}
                             alt="NodeJS Back End"
@@ -459,12 +459,12 @@ export default function Cta() {
                             fetchpriority="low"
                           />
                         </div>
-                        <div class="text-slate-400 tech-title ">NodeJS</div>
+                        <div className="text-slate-400 tech-title ">NodeJS</div>
                       </a>
                     </li>
                     <li>
                       <a>
-                        <div class="tech-icon">
+                        <div className="tech-icon">
                           <img
                             src={java}
                             alt="Java Back End"
@@ -475,12 +475,12 @@ export default function Cta() {
                             fetchpriority="low"
                           />
                         </div>
-                        <div class="text-slate-400 tech-title ">Java</div>
+                        <div className="text-slate-400 tech-title ">Java</div>
                       </a>
                     </li>
                     <li>
                       <a>
-                        <div class="tech-icon">
+                        <div className="tech-icon">
                           <img
                             src={dotnet}
                             alt="DotNet Back End"
@@ -491,12 +491,12 @@ export default function Cta() {
                             fetchpriority="low"
                           />
                         </div>
-                        <div class="text-slate-400 tech-title ">DotNet</div>
+                        <div className="text-slate-400 tech-title ">DotNet</div>
                       </a>
                     </li>
                     <li>
                       <a>
-                        <div class="tech-icon">
+                        <div className="tech-icon">
                           <img
                             src={php}
                             alt="PHP Back End"
@@ -507,12 +507,12 @@ export default function Cta() {
                             fetchpriority="low"
                           />
                         </div>
-                        <div class="text-slate-400 tech-title ">PHP</div>
+                        <div className="text-slate-400 tech-title ">PHP</div>
                       </a>
                     </li>
                     <li>
                       <a>
-                        <div class="tech-icon">
+                        <div className="tech-icon">
                           <img
                             src={laravel}
                             alt="Laravel Back End"
@@ -523,12 +523,12 @@ export default function Cta() {
                             fetchpriority="low"
                           />
                         </div>
-                        <div class="text-slate-400 tech-title ">Laravel</div>
+                        <div className="text-slate-400 tech-title ">Laravel</div>
                       </a>
                     </li>
                     <li>
                       <a>
-                        <div class="tech-icon">
+                        <div className="tech-icon">
                           <img
                             src={codeigniter}
                             alt="Codeigniter Back End"
@@ -539,12 +539,12 @@ export default function Cta() {
                             fetchpriority="low"
                           />
                         </div>
-                        <div class="text-slate-400 tech-title ">Codeigniter</div>
+                        <div className="text-slate-400 tech-title ">Codeigniter</div>
                       </a>
                     </li>
                     <li>
                       <a>
-                        <div class="tech-icon">
+                        <div className="tech-icon">
                           <img
                             src={rubyonrails}
                             alt="Ruby on Rails Back End"
@@ -555,11 +555,11 @@ export default function Cta() {
                             fetchpriority="low"
                           />
                         </div>
-                        <div class="text-slate-400 tech-title ">Ruby on Rails</div>
+                        <div className="text-slate-400 tech-title ">Ruby on Rails</div>
                       </a>
                     </li>
                     <li>
-                      <div class="tech-icon">
+                      <div className="tech-icon">
                         <img
                           src={nest}
                           alt="Nest Back End"
@@ -570,17 +570,17 @@ export default function Cta() {
                           fetchpriority="low"
                         />
                       </div>
-                      <div class="text-slate-400 tech-title ">Nest</div>
+                      <div className="text-slate-400 tech-title ">Nest</div>
                     </li>
                   </ul>
                 </div>
               )}
               {activeTab === "Mobile" && (
                 <div className="tech-list-animated">
-                  <ul class="tech-list">
+                  <ul className="tech-list">
                     <li>
                       <a>
-                        <div class="tech-icon">
+                        <div className="tech-icon">
                           <img
                             src={android}
                             alt="Android Mobile"
@@ -591,12 +591,12 @@ export default function Cta() {
                             fetchpriority="low"
                           />
                         </div>
-                        <div class="text-slate-400 tech-title ">Android</div>
+                        <div className="text-slate-400 tech-title ">Android</div>
                       </a>
                     </li>
                     <li>
                       <a>
-                        <div class="tech-icon">
+                        <div className="tech-icon">
                           <img
                             src={ios}
                             alt="iOS Mobile"
@@ -607,12 +607,12 @@ export default function Cta() {
                             fetchpriority="low"
                           />
                         </div>
-                        <div class="text-slate-400 tech-title ">iOS</div>
+                        <div className="text-slate-400 tech-title ">iOS</div>
                       </a>
                     </li>
                     <li>
                       <a>
-                        <div class="tech-icon">
+                        <div className="tech-icon">
                           <img
                             src={reactnative}
                             alt="React Mobile"
@@ -623,12 +623,12 @@ export default function Cta() {
                             fetchpriority="low"
                           />
                         </div>
-                        <div class="text-slate-400 tech-title ">React</div>
+                        <div className="text-slate-400 tech-title ">React</div>
                       </a>
                     </li>
                     <li>
                       <a>
-                        <div class="tech-icon">
+                        <div className="tech-icon">
                           <img
                             src={flutter}
                             alt="Flutter Mobile"
@@ -639,7 +639,7 @@ export default function Cta() {
                             fetchpriority="low"
                           />
                         </div>
-                        <div class="text-slate-400 tech-title ">Flutter</div>
+                        <div className="text-slate-400 tech-title ">Flutter</div>
                       </a>
                     </li>
                   </ul>
@@ -647,10 +647,10 @@ export default function Cta() {
               )}
               {activeTab === "CMS" && (
                 <div className="tech-list-animated">
-                  <ul class="tech-list">
+                  <ul className="tech-list">
                     <li>
                       <a>
-                        <div class="tech-icon">
+                        <div className="tech-icon">
                           <img
                             src={wordpress}
                             alt="Wordpress CMS"
@@ -661,12 +661,12 @@ export default function Cta() {
                             fetchpriority="low"
                           />
                         </div>
-                        <div class="text-slate-400 tech-title ">Wordpress</div>
+                        <div className="text-slate-400 tech-title ">Wordpress</div>
                       </a>
                     </li>
                     <li>
                       <a>
-                        <div class="tech-icon">
+                        <div className="tech-icon">
                           <img
                             src={codeigniter}
                             alt="Codeigniter CMS"
@@ -677,7 +677,7 @@ export default function Cta() {
                             fetchpriority="low"
                           />
                         </div>
-                        <div class="text-slate-400 tech-title ">Codeigniter</div>
+                        <div className="text-slate-400 tech-title ">Codeigniter</div>
                       </a>
                     </li>
                   </ul>
@@ -685,9 +685,9 @@ export default function Cta() {
               )}
               {activeTab === "Database" && (
                 <div className="tech-list-animated">
-                  <ul class="tech-list">
+                  <ul className="tech-list">
                     <li>
-                      <div class="tech-icon">
+                      <div className="tech-icon">
                         <img
                           src={mysql}
                           alt="MySQL Database"
@@ -698,10 +698,10 @@ export default function Cta() {
                           fetchpriority="low"
                         />
                       </div>
-                      <div class="text-slate-400 tech-title ">MySQL</div>
+                      <div className="text-slate-400 tech-title ">MySQL</div>
                     </li>
                     <li>
-                      <div class="tech-icon">
+                      <div className="tech-icon">
                         <img
                           src={mssql}
                           alt="MS SQL Database"
@@ -712,10 +712,10 @@ export default function Cta() {
                           fetchpriority="low"
                         />
                       </div>
-                      <div class="text-slate-400 tech-title ">MS SQL</div>
+                      <div className="text-slate-400 tech-title ">MS SQL</div>
                     </li>
                     <li>
-                      <div class="tech-icon">
+                      <div className="tech-icon">
                         <img
                           src={mongodb}
                           alt="MongoDB Database"
@@ -726,10 +726,10 @@ export default function Cta() {
                           fetchpriority="low"
                         />
                       </div>
-                      <div class="text-slate-400 tech-title ">MongoDB</div>
+                      <div className="text-slate-400 tech-title ">MongoDB</div>
                     </li>
                     <li>
-                      <div class="tech-icon">
+                      <div className="tech-icon">
                         <img
                           src={sqlite}
                           alt="SQLite Database"
@@ -740,10 +740,10 @@ export default function Cta() {
                           fetchpriority="low"
                         />
                       </div>
-                      <div class="text-slate-400 tech-title ">SQLite</div>
+                      <div className="text-slate-400 tech-title ">SQLite</div>
                     </li>
                     <li>
-                      <div class="tech-icon">
+                      <div className="tech-icon">
                         <img
                           src={postgresql}
                           alt="PostgreSQL Database"
@@ -754,10 +754,10 @@ export default function Cta() {
                           fetchpriority="low"
                         />
                       </div>
-                      <div class="text-slate-400 tech-title ">PostgreSQL</div>
+                      <div className="text-slate-400 tech-title ">PostgreSQL</div>
                     </li>
                     <li>
-                      <div class="tech-icon">
+                      <div className="tech-icon">
                         <img
                           src={firebase}
                           alt="Firebase Database"
@@ -768,10 +768,10 @@ export default function Cta() {
                           fetchpriority="low"
                         />
                       </div>
-                      <div class="text-slate-400 tech-title ">Firebase</div>
+                      <div className="text-slate-400 tech-title ">Firebase</div>
                     </li>
                     <li>
-                      <div class="tech-icon">
+                      <div className="tech-icon">
                         <img
                           src={realm}
                           alt="Realm Database"
@@ -782,16 +782,16 @@ export default function Cta() {
                           fetchpriority="low"
                         />
                       </div>
-                      <div class="text-slate-400 tech-title ">Realm</div>
+                      <div className="text-slate-400 tech-title ">Realm</div>
                     </li>
                   </ul>
                 </div>
               )}
               {activeTab === "DevOps" && (
                 <div className="tech-list-animated">
-                  <ul class="tech-list">
+                  <ul className="tech-list">
                     <li>
-                      <div class="tech-icon">
+                      <div className="tech-icon">
                         <img
                           src={terraform}
                           alt="Terraform DevOps and Cloud"
@@ -802,10 +802,10 @@ export default function Cta() {
                           fetchpriority="low"
                         />
                       </div>
-                      <div class="text-slate-400 tech-title ">Terraform</div>
+                      <div className="text-slate-400 tech-title ">Terraform</div>
                     </li>
                     <li>
-                      <div class="tech-icon">
+                      <div className="tech-icon">
                         <img
                           src={cicd}
                           alt="CI-CD DevOps and Cloud"
@@ -816,10 +816,10 @@ export default function Cta() {
                           fetchpriority="low"
                         />
                       </div>
-                      <div class="text-slate-400 tech-title ">CI-CD</div>
+                      <div className="text-slate-400 tech-title ">CI-CD</div>
                     </li>
                     <li>
-                      <div class="tech-icon">
+                      <div className="tech-icon">
                         <img
                           src={aws}
                           alt="AWS DevOps and Cloud"
@@ -830,10 +830,10 @@ export default function Cta() {
                           fetchpriority="low"
                         />
                       </div>
-                      <div class="text-slate-400 tech-title ">AWS</div>
+                      <div className="text-slate-400 tech-title ">AWS</div>
                     </li>
                     <li>
-                      <div class="tech-icon">
+                      <div className="tech-icon">
                         <img
                           src={jenkins}
                           alt="Jenkins DevOps and Cloud"
@@ -844,10 +844,10 @@ export default function Cta() {
                           fetchpriority="low"
                         />
                       </div>
-                      <div class="text-slate-400 tech-title ">Jenkins</div>
+                      <div className="text-slate-400 tech-title ">Jenkins</div>
                     </li>
                     <li>
-                      <div class="tech-icon">
+                      <div className="tech-icon">
                         <img
                           src={kubernetes}
                           alt="Kubernetes DevOps and Cloud"
@@ -858,10 +858,10 @@ export default function Cta() {
                           fetchpriority="low"
                         />
                       </div>
-                      <div class="text-slate-400 tech-title ">Kubernetes</div>
+                      <div className="text-slate-400 tech-title ">Kubernetes</div>
                     </li>
                     <li>
-                      <div class="tech-icon">
+                      <div className="tech-icon">
                         <img
                           src={docker}
                           alt="Docker DevOps and Cloud"
@@ -872,16 +872,16 @@ export default function Cta() {
                           fetchpriority="low"
                         />
                       </div>
-                      <div class="text-slate-400 tech-title ">Docker</div>
+                      <div className="text-slate-400 tech-title ">Docker</div>
                     </li>
                   </ul>
                 </div>
               )}
               {activeTab === "ProjectManagement" && (
                 <div className="tech-list-animated">
-                  <ul class="tech-list">
+                  <ul className="tech-list">
                     <li>
-                      <div class="tech-icon">
+                      <div className="tech-icon">
                         <img
                           src={mt}
                           alt="Microsoft Team Project Management"
@@ -892,10 +892,10 @@ export default function Cta() {
                           fetchpriority="low"
                         />
                       </div>
-                      <div class="text-slate-400 tech-title ">Microsoft Team</div>
+                      <div className="text-slate-400 tech-title ">Microsoft Team</div>
                     </li>
                     <li>
-                      <div class="tech-icon">
+                      <div className="tech-icon">
                         <img
                           src={jira}
                           alt="Jira Project Management"
@@ -906,10 +906,10 @@ export default function Cta() {
                           fetchpriority="low"
                         />
                       </div>
-                      <div class="text-slate-400 tech-title ">Jira</div>
+                      <div className="text-slate-400 tech-title ">Jira</div>
                     </li>
                     <li>
-                      <div class="tech-icon">
+                      <div className="tech-icon">
                         <img
                           src={asana}
                           alt="Asana Project Management"
@@ -920,10 +920,10 @@ export default function Cta() {
                           fetchpriority="low"
                         />
                       </div>
-                      <div class="text-slate-400 tech-title ">Asana</div>
+                      <div className="text-slate-400 tech-title ">Asana</div>
                     </li>
                     <li>
-                      <div class="tech-icon">
+                      <div className="tech-icon">
                         <img
                           src={slack}
                           alt="Slack Project Management"
@@ -934,10 +934,10 @@ export default function Cta() {
                           fetchpriority="low"
                         />
                       </div>
-                      <div class="text-slate-400 tech-title ">Slack</div>
+                      <div className="text-slate-400 tech-title ">Slack</div>
                     </li>
                     <li>
-                      <div class="tech-icon">
+                      <div className="tech-icon">
                         <img
                           src={clickup}
                           alt="ClickUp Project Management"
@@ -948,10 +948,10 @@ export default function Cta() {
                           fetchpriority="low"
                         />
                       </div>
-                      <div class="text-slate-400 tech-title ">ClickUp</div>
+                      <div className="text-slate-400 tech-title ">ClickUp</div>
                     </li>
                     <li>
-                      <div class="tech-icon">
+                      <div className="tech-icon">
                         <img
                           src={trello}
                           alt="Trello Project Management"
@@ -962,10 +962,10 @@ export default function Cta() {
                           fetchpriority="low"
                         />
                       </div>
-                      <div class="text-slate-400 tech-title ">Trello</div>
+                      <div className="text-slate-400 tech-title ">Trello</div>
                     </li>
                     <li>
-                      <div class="tech-icon">
+                      <div className="tech-icon">
                         <img
                           src={mdc}
                           alt="MondayDotCom Project Management"
@@ -976,10 +976,10 @@ export default function Cta() {
                           fetchpriority="low"
                         />
                       </div>
-                      <div class="text-slate-400 tech-title ">MondayDotCom</div>
+                      <div className="text-slate-400 tech-title ">MondayDotCom</div>
                     </li>
                     <li>
-                      <div class="tech-icon">
+                      <div className="tech-icon">
                         <img
                           src={pivotal}
                           alt="Pivotal Project Management"
@@ -990,7 +990,7 @@ export default function Cta() {
                           fetchpriority="low"
                         />
                       </div>
-                      <div class="text-slate-400 tech-title ">Pivotal</div>
+                      <div className="text-slate-400 tech-title ">Pivotal</div>
                     </li>
                   </ul>
                 </div>
@@ -998,7 +998,7 @@ export default function Cta() {
             </div>
             <div className="text-center mt-10">
                 <a
-                class="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500 text-white"
+                className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500 text-white"
                  href="mailto:about@apheliossolution.com?subject=Developer%20Consultation&body=Hello,%0D%0A%0D%0AI%20would%20like%20to%20hire%20a%20developer%20consultation."
                 >
                 Hire a Developer Consultation

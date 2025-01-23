@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaPhoneAlt, FaEnvelope, FaSkype } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import { postData } from "../services/consultFormService";
 import { toast } from "react-toastify";
 import { Helmet } from 'react-helmet';
@@ -74,17 +75,7 @@ export default function GetInTouch() {
       style={{ backgroundImage: `url(${bg})` }}
     >
       <div className="container relative">
-        <div className="grid grid-cols-1 pb-6 text-center">
-          <h3 className="font-semibold text-2xl leading-normal mb-4">
-            We'd love to hear about your project!
-          </h3>
-
-          <p className="text-slate-400 max-w-xl mx-auto">
-            Want assistance implementing new strategies to kick-start your
-            company's growth? Get in touch with us to discuss your problems and
-            business goals. We can build a solution tailored to your needs.
-          </p>
-        </div>
+        
 
         <div className="grid md:grid-cols-12 grid-cols-1 items-center gap-6 contactus dark:shadow-gray-700 bg-white dark:bg-slate-900">
           <div className="lg:col-span-4 md:col-span-6 dark:bg-slate-900 ">
@@ -93,7 +84,7 @@ export default function GetInTouch() {
                 Contact Information
               </span>
               <p className="text-slate-400 max-w-xl mx-auto mb-5">
-                Fill up the form and our Team will get back to you within 24
+                Mail/Message Us and our Team will get back to you within 24
                 hours.
               </p>
               <ul>
@@ -153,7 +144,19 @@ export default function GetInTouch() {
           <div className="lg:col-span-8 md:col-span-6">
             <div className="lg:ms-5">
               <div className="dark:bg-slate-900 dark:shadow-gray-700 rounded-md p-6">
-                <form onSubmit={handleSubmit}>
+              <div className="grid grid-cols-1 pb-6 text-center">
+          <h3 className="font-semibold text-2xl leading-normal mb-4">
+            We'd love to hear about your project!
+          </h3>
+
+          <p className="text-slate-400 max-w-xl mx-auto">
+            Want assistance implementing new strategies to kick-start your
+            company's growth? Get in touch with us to discuss your problems and
+            business goals. We can build a solution tailored to your needs.
+          </p>
+          <Link to="mailto:about@apheliossolution.com" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Consult Aphelios</Link>
+        </div>
+                {/* <form onSubmit={handleSubmit}>
                   <div className="grid lg:grid-cols-12 grid-cols-1 gap-3">
                     <div className="lg:col-span-6">
                       <label htmlFor="firstName" className="font-semibold">
@@ -255,7 +258,7 @@ export default function GetInTouch() {
                   >
                     Submit
                   </button>
-                </form>
+                </form> */}
               </div>
             </div>
           </div>

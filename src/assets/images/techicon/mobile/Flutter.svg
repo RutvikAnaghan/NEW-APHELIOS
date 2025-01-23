@@ -21,8 +21,8 @@
 		<clipPath id="SVGID_2_">
 			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
 		</clipPath>
-		<g class="st0">
-			<path class="st1" d="M1664.1,1444.3l544.9-545h-396.2L1466,1246.1L1664.1,1444.3z"/>
+		<g className="st0">
+			<path className="st1" d="M1664.1,1444.3l544.9-545h-396.2L1466,1246.1L1664.1,1444.3z"/>
 		</g>
 	</g>
 	<g>
@@ -33,7 +33,7 @@
 		<clipPath id="SVGID_4_">
 			<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
 		</clipPath>
-		<path class="st2" d="M1168.8,948.9l644-644h396.2l-842,842.1L1168.8,948.9z"/>
+		<path className="st2" d="M1168.8,948.9l644-644h396.2l-842,842.1L1168.8,948.9z"/>
 	</g>
 	<g>
 		<defs>
@@ -43,7 +43,7 @@
 		<clipPath id="SVGID_6_">
 			<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
 		</clipPath>
-		<path class="st3" d="M1812.8,1592.9h396.2l-346.7-346.7l-198.2,198.2L1812.8,1592.9z"/>
+		<path className="st3" d="M1812.8,1592.9h396.2l-346.7-346.7l-198.2,198.2L1812.8,1592.9z"/>
 	</g>
 	<g>
 		<defs>
@@ -58,7 +58,7 @@
 			<stop  offset="0" style="stop-color:#1A237E;stop-opacity:0.4"/>
 			<stop  offset="1" style="stop-color:#1A237E;stop-opacity:0"/>
 		</linearGradient>
-		<path class="st4" d="M1862.2,1246.1l-198.2,198.2l293.9-101.8L1862.2,1246.1z"/>
+		<path className="st4" d="M1862.2,1246.1l-198.2,198.2l293.9-101.8L1862.2,1246.1z"/>
 	</g>
 	<g>
 		<defs>
@@ -68,8 +68,8 @@
 		<clipPath id="SVGID_11_">
 			<use xlink:href="#SVGID_10_"  style="overflow:visible;"/>
 		</clipPath>
-		<g class="st5">
-			<path class="st6" d="M1466,1246.1l198.2-198.2l198.2,198.2l-198.2,198.2L1466,1246.1z"/>
+		<g className="st5">
+			<path className="st6" d="M1466,1246.1l198.2-198.2l198.2,198.2l-198.2,198.2L1466,1246.1z"/>
 		</g>
 	</g>
 	
@@ -77,7 +77,7 @@
 		<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0.1"/>
 		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
 	</radialGradient>
-	<path class="st7" d="M2208.9,899.3l-346.7,346.8l346.7,346.8h-396.2l-346.8-346.8l346.8-346.8H2208.9z M1812.8,304.9l-644,644
+	<path className="st7" d="M2208.9,899.3l-346.7,346.8l346.7,346.8h-396.2l-346.8-346.8l346.8-346.8H2208.9z M1812.8,304.9l-644,644
 		l198.2,198.2l842-842.1C2208.9,304.9,1812.8,304.9,1812.8,304.9z"/>
 </g>
 </svg>

@@ -7,12 +7,12 @@
 	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#4040B2;}
 </style>
 <g transform="matrix(.549621 0 0 .549621 6.171141 42.722741)">
-	<path class="st0" d="M119.5,21.1v-0.2L94.6,6.6v28.7l24.9,14.4V21.1z M119.5-11v28.7L94.6,3.4v-28.7L119.5-11z"/>
-	<path class="st1" d="M122.2,17.8l24.9-14.4v-28.7L122.2-11V17.8z"/>
+	<path className="st0" d="M119.5,21.1v-0.2L94.6,6.6v28.7l24.9,14.4V21.1z M119.5-11v28.7L94.6,3.4v-28.7L119.5-11z"/>
+	<path className="st1" d="M122.2,17.8l24.9-14.4v-28.7L122.2-11V17.8z"/>
 	<g>
-		<path class="st0" d="M67-12.6L91.9,1.7V-27L67-41.3V-12.6z"/>
-		<path class="st0" d="M136.6,30.8"/>
-		<path class="st0" d="M94.6,6.6"/>
+		<path className="st0" d="M67-12.6L91.9,1.7V-27L67-41.3V-12.6z"/>
+		<path className="st0" d="M136.6,30.8"/>
+		<path className="st0" d="M94.6,6.6"/>
 	</g>
 </g>
 </svg>
