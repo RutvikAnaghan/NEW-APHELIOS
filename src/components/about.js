@@ -44,7 +44,7 @@ export default function About(){
                     <div className="md:col-span-6">
                         <div className="lg:me-8">
                             <div className="relative">
-                                <img src={aboutImage} className="rounded-full shadow dark:shadow-gray-700" alt=""/>
+                                <img src={aboutImage} className="rounded-full shadow dark:shadow-gray-700 aboutimage" alt=""/>
 
                                 <div className="absolute top-1/2 -translate-y-1/2 start-0 end-0 mx-auto size-56 flex justify-center items-center bg-white dark:bg-slate-900 rounded-full shadow dark:shadow-gray-700">
                                     <div className="text-center">

@@ -16,8 +16,6 @@ import dotnet from "../assets/images/techicon/BE/DotNet.svg";
 import php from "../assets/images/techicon/BE/PHP.svg";
 import laravel from "../assets/images/techicon/BE/Laravel.svg";
 import codeigniter from "../assets/images/techicon/BE/Codeigniter.svg";
-import rubyonrails from "../assets/images/techicon/BE/Ruby on Rails.svg";
-import nest from "../assets/images/techicon/BE/Nest.svg";
 
 import android from "../assets/images/techicon/mobile/Android.svg";
 import ios from "../assets/images/techicon/mobile/iOS.svg";
@@ -25,31 +23,16 @@ import reactnative from "../assets/images/techicon/mobile/React.svg";
 import flutter from "../assets/images/techicon/mobile/Flutter.svg";
 
 import wordpress from "../assets/images/techicon/CMS/Wordpress.svg";
-// import Codeigniter from '../assets/images/techicon/CMS/Codeigniter.svg';
+import shopify from "../assets/images/techicon/CMS/shopify.svg";
+import webflow from "../assets/images/techicon/CMS/webflow-svgrepo-com.svg";
+import wix from "../assets/images/techicon/CMS/wix-svgrepo-com.svg";
 
-import mysql from "../assets/images/techicon/db/MySQL.svg";
-import mssql from "../assets/images/techicon/db/MS SQL.svg";
-import mongodb from "../assets/images/techicon/db/MongoDB.svg";
-import sqlite from "../assets/images/techicon/db/SQLite.svg";
-import postgresql from "../assets/images/techicon/db/PostgreSQL.svg";
-import firebase from "../assets/images/techicon/db/Firebase.svg";
-import realm from "../assets/images/techicon/db/Realm.svg";
+import openAI from "../assets/images/techicon/db/chatgpt-icon.svg";
+import tensorflow from "../assets/images/techicon/db/google-tensorflow-icon.svg";
+import openCV from "../assets/images/techicon/db/opencv-svgrepo-com.svg";
+import chatbots from "../assets/images/techicon/db/robot-bot-icon.svg";
+import copilot from "../assets/images/techicon/db/copilot-icon.svg";
 
-import terraform from "../assets/images/techicon/dc/Terraform.svg";
-import cicd from "../assets/images/techicon/dc/CI-CD.svg";
-import aws from "../assets/images/techicon/dc/AWS.svg";
-import jenkins from "../assets/images/techicon/dc/Jenkins.svg";
-import kubernetes from "../assets/images/techicon/dc/Kubernetes.svg";
-import docker from "../assets/images/techicon/dc/Docker.svg";
-
-import mt from "../assets/images/techicon/pm/Microsoft Team.svg";
-import jira from "../assets/images/techicon/pm/Jira.svg";
-import asana from "../assets/images/techicon/pm/Asana.svg";
-import slack from "../assets/images/techicon/pm/Slack_icon_2019.svg.png";
-import clickup from "../assets/images/techicon/pm/ClickUp.svg";
-import trello from "../assets/images/techicon/pm/Trello.svg";
-import mdc from "../assets/images/techicon/pm/MondayDotCom.svg";
-import pivotal from "../assets/images/techicon/pm/Pivotal.svg";
 
 import bg from '../assets/images/bg/2.png'
 
@@ -146,27 +129,11 @@ export default function Cta() {
               </a>
               <a
                 className={`hover-line dark:text-white ${
-                  activeTab === "Database" ? "active" : ""
+                  activeTab === "AI & ML" ? "active" : ""
                 }`}
-                onClick={() => handleTabClick("Database")}
+                onClick={() => handleTabClick("AI & ML")}
               >
-                Database
-              </a>
-              <a
-                className={`hover-line dark:text-white ${
-                  activeTab === "DevOps" ? "active" : ""
-                }`}
-                onClick={() => handleTabClick("DevOps")}
-              >
-                DevOps and Cloud
-              </a>
-              <a
-                className={`hover-line dark:text-white ${
-                  activeTab === "ProjectManagement" ? "active" : ""
-                }`}
-                onClick={() => handleTabClick("ProjectManagement")}
-              >
-                Project Management
+                AI & ML
               </a>
               <div className="animation start-hom"></div>
             </div>
@@ -542,36 +509,7 @@ export default function Cta() {
                         <div className="text-slate-400 tech-title ">Codeigniter</div>
                       </a>
                     </li>
-                    <li>
-                      <a>
-                        <div className="tech-icon">
-                          <img
-                            src={rubyonrails}
-                            alt="Ruby on Rails Back End"
-                            title="Ruby on Rails"
-                            width="130"
-                            height="90"
-                            loading="lazy"
-                            fetchpriority="low"
-                          />
-                        </div>
-                        <div className="text-slate-400 tech-title ">Ruby on Rails</div>
-                      </a>
-                    </li>
-                    <li>
-                      <div className="tech-icon">
-                        <img
-                          src={nest}
-                          alt="Nest Back End"
-                          title="Nest"
-                          width="130"
-                          height="90"
-                          loading="lazy"
-                          fetchpriority="low"
-                        />
-                      </div>
-                      <div className="text-slate-400 tech-title ">Nest</div>
-                    </li>
+                   
                   </ul>
                 </div>
               )}
@@ -668,6 +606,54 @@ export default function Cta() {
                       <a>
                         <div className="tech-icon">
                           <img
+                            src={shopify}
+                            alt="Shopify CMS"
+                            title="Shopify"
+                            width="130"
+                            height="90"
+                            loading="lazy"
+                            fetchpriority="low"
+                          />
+                        </div>
+                        <div className="text-slate-400 tech-title ">Shopify</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <div className="tech-icon">
+                          <img
+                            src={webflow}
+                            alt="Webflow CMS"
+                            title="Webflow"
+                            width="130"
+                            height="90"
+                            loading="lazy"
+                            fetchpriority="low"
+                          />
+                        </div>
+                        <div className="text-slate-400 tech-title ">Webflow</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <div className="tech-icon">
+                          <img
+                            src={wix}
+                            alt="Wix CMS"
+                            title="Wix"
+                            width="130"
+                            height="90"
+                            loading="lazy"
+                            fetchpriority="low"
+                          />
+                        </div>
+                        <div className="text-slate-400 tech-title ">Wix</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <div className="tech-icon">
+                          <img
                             src={codeigniter}
                             alt="Codeigniter CMS"
                             title="Codeigniter"
@@ -683,314 +669,77 @@ export default function Cta() {
                   </ul>
                 </div>
               )}
-              {activeTab === "Database" && (
+              {activeTab === "AI & ML" && (
                 <div className="tech-list-animated">
                   <ul className="tech-list">
                     <li>
                       <div className="tech-icon">
                         <img
-                          src={mysql}
-                          alt="MySQL Database"
-                          title="MySQL"
+                          src={openAI}
+                          alt="OpenAI"
+                          title="OpenAI"
                           width="130"
                           height="90"
                           loading="lazy"
                           fetchpriority="low"
                         />
                       </div>
-                      <div className="text-slate-400 tech-title ">MySQL</div>
+                      <div className="text-slate-400 tech-title ">OpenAI</div>
                     </li>
                     <li>
                       <div className="tech-icon">
                         <img
-                          src={mssql}
-                          alt="MS SQL Database"
-                          title="MS SQL"
+                          src={tensorflow}
+                          alt="Tensorflow"
+                          title="Tensorflow"
                           width="130"
                           height="90"
                           loading="lazy"
                           fetchpriority="low"
                         />
                       </div>
-                      <div className="text-slate-400 tech-title ">MS SQL</div>
-                    </li>
-                    <li>
+                      <div className="text-slate-400 tech-title ">Tensorflow</div>
+                    </li><li>
                       <div className="tech-icon">
                         <img
-                          src={mongodb}
-                          alt="MongoDB Database"
-                          title="MongoDB"
+                          src={openCV}
+                          alt="OpenCV"
+                          title="OpenCV"
                           width="130"
                           height="90"
                           loading="lazy"
                           fetchpriority="low"
                         />
                       </div>
-                      <div className="text-slate-400 tech-title ">MongoDB</div>
+                      <div className="text-slate-400 tech-title ">OpenCV</div>
                     </li>
                     <li>
                       <div className="tech-icon">
                         <img
-                          src={sqlite}
-                          alt="SQLite Database"
-                          title="SQLite"
-                          width="110"
-                          height="90"
-                          loading="lazy"
-                          fetchpriority="low"
-                        />
-                      </div>
-                      <div className="text-slate-400 tech-title ">SQLite</div>
-                    </li>
-                    <li>
-                      <div className="tech-icon">
-                        <img
-                          src={postgresql}
-                          alt="PostgreSQL Database"
-                          title="PostgreSQL"
+                          src={chatbots}
+                          alt="ChatBots"
+                          title="ChatBots"
                           width="130"
                           height="90"
                           loading="lazy"
                           fetchpriority="low"
                         />
                       </div>
-                      <div className="text-slate-400 tech-title ">PostgreSQL</div>
+                      <div className="text-slate-400 tech-title ">ChatBots</div>
                     </li>
                     <li>
                       <div className="tech-icon">
                         <img
-                          src={firebase}
-                          alt="Firebase Database"
-                          title="Firebase"
+                          src={copilot}
+                          alt="Copilot"
+                          title="Copilot"
                           width="130"
                           height="90"
                           loading="lazy"
                           fetchpriority="low"
                         />
                       </div>
-                      <div className="text-slate-400 tech-title ">Firebase</div>
-                    </li>
-                    <li>
-                      <div className="tech-icon">
-                        <img
-                          src={realm}
-                          alt="Realm Database"
-                          title="Realm"
-                          width="110"
-                          height="90"
-                          loading="lazy"
-                          fetchpriority="low"
-                        />
-                      </div>
-                      <div className="text-slate-400 tech-title ">Realm</div>
-                    </li>
-                  </ul>
-                </div>
-              )}
-              {activeTab === "DevOps" && (
-                <div className="tech-list-animated">
-                  <ul className="tech-list">
-                    <li>
-                      <div className="tech-icon">
-                        <img
-                          src={terraform}
-                          alt="Terraform DevOps and Cloud"
-                          title="Terraform"
-                          width="130"
-                          height="90"
-                          loading="lazy"
-                          fetchpriority="low"
-                        />
-                      </div>
-                      <div className="text-slate-400 tech-title ">Terraform</div>
-                    </li>
-                    <li>
-                      <div className="tech-icon">
-                        <img
-                          src={cicd}
-                          alt="CI-CD DevOps and Cloud"
-                          title="CI-CD"
-                          width="130"
-                          height="90"
-                          loading="lazy"
-                          fetchpriority="low"
-                        />
-                      </div>
-                      <div className="text-slate-400 tech-title ">CI-CD</div>
-                    </li>
-                    <li>
-                      <div className="tech-icon">
-                        <img
-                          src={aws}
-                          alt="AWS DevOps and Cloud"
-                          title="AWS"
-                          width="130"
-                          height="90"
-                          loading="lazy"
-                          fetchpriority="low"
-                        />
-                      </div>
-                      <div className="text-slate-400 tech-title ">AWS</div>
-                    </li>
-                    <li>
-                      <div className="tech-icon">
-                        <img
-                          src={jenkins}
-                          alt="Jenkins DevOps and Cloud"
-                          title="Jenkins"
-                          width="130"
-                          height="90"
-                          loading="lazy"
-                          fetchpriority="low"
-                        />
-                      </div>
-                      <div className="text-slate-400 tech-title ">Jenkins</div>
-                    </li>
-                    <li>
-                      <div className="tech-icon">
-                        <img
-                          src={kubernetes}
-                          alt="Kubernetes DevOps and Cloud"
-                          title="Kubernetes"
-                          width="130"
-                          height="90"
-                          loading="lazy"
-                          fetchpriority="low"
-                        />
-                      </div>
-                      <div className="text-slate-400 tech-title ">Kubernetes</div>
-                    </li>
-                    <li>
-                      <div className="tech-icon">
-                        <img
-                          src={docker}
-                          alt="Docker DevOps and Cloud"
-                          title="Docker"
-                          width="130"
-                          height="90"
-                          loading="lazy"
-                          fetchpriority="low"
-                        />
-                      </div>
-                      <div className="text-slate-400 tech-title ">Docker</div>
-                    </li>
-                  </ul>
-                </div>
-              )}
-              {activeTab === "ProjectManagement" && (
-                <div className="tech-list-animated">
-                  <ul className="tech-list">
-                    <li>
-                      <div className="tech-icon">
-                        <img
-                          src={mt}
-                          alt="Microsoft Team Project Management"
-                          title="Microsoft Team"
-                          width="130"
-                          height="90"
-                          loading="lazy"
-                          fetchpriority="low"
-                        />
-                      </div>
-                      <div className="text-slate-400 tech-title ">Microsoft Team</div>
-                    </li>
-                    <li>
-                      <div className="tech-icon">
-                        <img
-                          src={jira}
-                          alt="Jira Project Management"
-                          title="Jira"
-                          width="130"
-                          height="90"
-                          loading="lazy"
-                          fetchpriority="low"
-                        />
-                      </div>
-                      <div className="text-slate-400 tech-title ">Jira</div>
-                    </li>
-                    <li>
-                      <div className="tech-icon">
-                        <img
-                          src={asana}
-                          alt="Asana Project Management"
-                          title="Asana"
-                          width="130"
-                          height="90"
-                          loading="lazy"
-                          fetchpriority="low"
-                        />
-                      </div>
-                      <div className="text-slate-400 tech-title ">Asana</div>
-                    </li>
-                    <li>
-                      <div className="tech-icon">
-                        <img
-                          src={slack}
-                          alt="Slack Project Management"
-                          title="Slack"
-                          width="60"
-                          height="90"
-                          loading="lazy"
-                          fetchpriority="low"
-                        />
-                      </div>
-                      <div className="text-slate-400 tech-title ">Slack</div>
-                    </li>
-                    <li>
-                      <div className="tech-icon">
-                        <img
-                          src={clickup}
-                          alt="ClickUp Project Management"
-                          title="ClickUp"
-                          width="130"
-                          height="90"
-                          loading="lazy"
-                          fetchpriority="low"
-                        />
-                      </div>
-                      <div className="text-slate-400 tech-title ">ClickUp</div>
-                    </li>
-                    <li>
-                      <div className="tech-icon">
-                        <img
-                          src={trello}
-                          alt="Trello Project Management"
-                          title="Trello"
-                          width="130"
-                          height="90"
-                          loading="lazy"
-                          fetchpriority="low"
-                        />
-                      </div>
-                      <div className="text-slate-400 tech-title ">Trello</div>
-                    </li>
-                    <li>
-                      <div className="tech-icon">
-                        <img
-                          src={mdc}
-                          alt="MondayDotCom Project Management"
-                          title="MondayDotCom"
-                          width="130"
-                          height="90"
-                          loading="lazy"
-                          fetchpriority="low"
-                        />
-                      </div>
-                      <div className="text-slate-400 tech-title ">MondayDotCom</div>
-                    </li>
-                    <li>
-                      <div className="tech-icon">
-                        <img
-                          src={pivotal}
-                          alt="Pivotal Project Management"
-                          title="Pivotal"
-                          width="130"
-                          height="90"
-                          loading="lazy"
-                          fetchpriority="low"
-                        />
-                      </div>
-                      <div className="text-slate-400 tech-title ">Pivotal</div>
+                      <div className="text-slate-400 tech-title ">Copilot</div>
                     </li>
                   </ul>
                 </div>

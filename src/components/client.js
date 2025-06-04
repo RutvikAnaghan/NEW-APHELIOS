@@ -86,7 +86,7 @@ export default function Client(){
                         href=""
                         rel="noopener noreferrer"
                     >
-                        <div className="review">
+                        <div className="review aboutimage">
                             <img
                                 src={google}
                                 alt="Google Review"
@@ -105,7 +105,7 @@ export default function Client(){
                         href=""
                         rel="noopener noreferrer"
                     >
-                        <div className="review review-border inline-block dark:hidden">
+                        <div className="review review-border inline-block dark:hidden aboutimage">
                             <img
                                 src={trustpilot}
                                 alt="Glassdoor Review"
@@ -115,7 +115,7 @@ export default function Client(){
                                 fetchpriority="low"
                             />
                         </div>
-                        <div className="review review-border hidden dark:inline-block">
+                        <div className="review review-border hidden dark:inline-block aboutimage">
                             <img
                                 src={trustpilotdark}
                                 alt="Glassdoor Review"
@@ -134,7 +134,7 @@ export default function Client(){
                         href=""
                         rel="noopener noreferrer"
                     >
-                        <div className="review inline-block dark:hidden">
+                        <div className="review inline-block dark:hidden aboutimage">
                             <img
                                 src={clutch}
                                 alt="Clutch Review"
@@ -144,7 +144,7 @@ export default function Client(){
                                 fetchpriority="low"
                             />
                         </div>
-                        <div className="review  hidden dark:inline-block">
+                        <div className="review  hidden dark:inline-block aboutimage">
                             <img
                                 src={clutchWhite}
                                 alt="Clutch Review"

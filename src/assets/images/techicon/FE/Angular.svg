@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 24.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="React" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 130 90" style="enable-background:new 0 0 130 90;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#E23237;}
-	.st1{fill:#B52E31;}
-	.st2{fill:#FFFFFF;}
-</style>
-<g>
-	<path className="st0" d="M41.4,28.3L64.7,20l23.9,8.2l-3.9,30.8L64.7,70L45,59.1L41.4,28.3z"/>
-	<path className="st1" d="M88.6,28.2L64.7,20v50l20-11.1C84.7,58.9,88.6,28.2,88.6,28.2z"/>
-	<path className="st2" d="M64.7,25.8L50.2,58.1l5.4-0.1l2.9-7.3h13l3.2,7.3l5.2,0.1L64.7,25.8z M64.8,36.2l4.9,10.2h-9.2L64.8,36.2
-		L64.8,36.2z"/>
-</g>
-</svg>
+<?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 114.4 122.88" style="enable-background:new 0 0 114.4 122.88" xml:space="preserve"><style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#DD0031;} .st1{fill-rule:evenodd;clip-rule:evenodd;fill:#C3002F;} .st2{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}</style><g><polygon class="st0" points="57.2,0 57.2,0 57.2,0 0,20.4 8.72,96.03 57.2,122.88 57.2,122.88 57.2,122.88 105.68,96.03 114.4,20.4 57.2,0"/><polygon class="st1" points="57.2,0 57.2,13.64 57.2,13.58 57.2,75.82 57.2,75.82 57.2,122.88 57.2,122.88 105.68,96.03 114.4,20.4 57.2,0"/><path class="st2" d="M57.2,13.58L21.44,93.76l0,0h13.33l0,0l7.19-17.94h30.35l7.19,17.94l0,0h13.33l0,0L57.2,13.58L57.2,13.58 L57.2,13.58L57.2,13.58L57.2,13.58L57.2,13.58z M67.65,64.76H46.76L57.2,39.63L67.65,64.76L67.65,64.76z"/></g></svg>

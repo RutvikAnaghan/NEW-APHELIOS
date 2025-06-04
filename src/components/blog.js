@@ -6,23 +6,6 @@ import {FiCalendar, FiClock} from '../assets/icons/vander'
 import { Helmet } from 'react-helmet';
 
 export default function Blogs(){
-    // const [blogs, setBlogs] = useState([]);
-    // const [error, setError] = useState(null);
-
-    // useEffect(() => {
-    //     const fetchBlogs = async () => {
-    //         try {
-    //             const data = await blogService.getBlogs();
-    //             setBlogs(data);
-    //         } catch (error) {
-    //             setError("There was an error fetching the blog posts.");
-    //             console.error("Error fetching blog posts:", error);
-    //         }
-    //     };
-
-    //     fetchBlogs();
-    // }, []);
-
     return (
         <>
          <Helmet>

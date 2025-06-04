@@ -344,7 +344,12 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 */
 img,
 video {
-  max-width: 100%;
+  max-width: 50%;
+  height: auto;
+}
+
+.aboutimage{
+  max-width: 100% !important;
   height: auto;
 }
 /* Make elements with the HTML hidden attribute stay hidden by default */
@@ -1368,7 +1373,7 @@ video {
   line-height: 2rem !important;
 }
 .text-4xl{
-  font-size: 2.25rem !important;
+  font-size: 3.25rem !important;
   line-height: 2.5rem !important;
 }
 .text-5xl{
