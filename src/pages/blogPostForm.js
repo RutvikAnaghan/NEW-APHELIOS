@@ -510,7 +510,7 @@ export default function HomePage() {
         </div>
       </main>
       <Footer />
-      <Switcher />
+      {/* <Switcher /> */}
     </>
   );
 }

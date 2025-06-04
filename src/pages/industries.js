@@ -240,7 +240,7 @@ export default function Industries() {
         </div>
       </main>
       <Footer />
-      <Switcher />
+      {/* <Switcher /> */}
       <Navbar />
     </>
   );

@@ -86,10 +86,11 @@ export default function Client(){
                         href=""
                         rel="noopener noreferrer"
                     >
-                        <div className="review aboutimage">
+                        <div className="review">
                             <img
                                 src={google}
                                 alt="Google Review"
+                                className="aboutimage"
                                 width="136"
                                 height="67"
                                 loading="lazy"
@@ -105,26 +106,18 @@ export default function Client(){
                         href=""
                         rel="noopener noreferrer"
                     >
-                        <div className="review review-border inline-block dark:hidden aboutimage">
+                        <div className="review review-border inline-block dark:hidden ">
                             <img
                                 src={trustpilot}
                                 alt="Glassdoor Review"
+                                className="aboutimage"
                                 width="153"
                                 height="68"
                                 loading="lazy"
                                 fetchpriority="low"
                             />
                         </div>
-                        <div className="review review-border hidden dark:inline-block aboutimage">
-                            <img
-                                src={trustpilotdark}
-                                alt="Glassdoor Review"
-                                width="153"
-                                height="68"
-                                loading="lazy"
-                                fetchpriority="low"
-                            />
-                        </div>
+                       
                     </a>
                 </div>
                 <div>
@@ -134,19 +127,10 @@ export default function Client(){
                         href=""
                         rel="noopener noreferrer"
                     >
-                        <div className="review inline-block dark:hidden aboutimage">
+                        <div className="review inline-block dark:hidden">
                             <img
                                 src={clutch}
-                                alt="Clutch Review"
-                                width="136"
-                                height="64"
-                                loading="lazy"
-                                fetchpriority="low"
-                            />
-                        </div>
-                        <div className="review  hidden dark:inline-block aboutimage">
-                            <img
-                                src={clutchWhite}
+                                className="aboutimage"
                                 alt="Clutch Review"
                                 width="136"
                                 height="64"

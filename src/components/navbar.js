@@ -74,8 +74,8 @@
           <nav className={`navbar ${scroll ? "is-sticky" : ""}`} id="navbar">
             <div className="container relative flex flex-wrap items-center justify-between">
               <RouterLink className="navbar-brand md:me-8" to="/">
-                <img src={logoDark} className="inline-block dark:hidden" alt="" />
-                <img src={logoLight} className="hidden dark:inline-block" alt="" />
+                <img src={logoDark} className="inline-block dark:hidden aboutimage" alt="" />
+                <img src={logoLight} className="hidden dark:inline-block aboutimage" alt="" />
               </RouterLink>
     
               <div className="nav-icons flex items-center lg_992:order-2 ms-auto md:ms-8">
@@ -141,7 +141,7 @@
                       Industries
                     </RouterLink>
                   </li>
-                  {/* <li className="nav-item ms-0 cursor-pointer">
+                  <li className="nav-item ms-0 cursor-pointer">
                     <ScrollLink
                       className="nav-link"
                       to="pricing"
@@ -153,7 +153,7 @@
                     >
                       Case Studies
                     </ScrollLink>
-                  </li> */}
+                  </li>
                   <li className="nav-item ms-0 cursor-pointer">
                     <ScrollLink
                       className="nav-link"
@@ -166,6 +166,11 @@
                     >
                       Why Aphelios
                     </ScrollLink>
+                  </li>
+                  <li className="nav-item ms-0 cursor-pointer">
+                  <RouterLink className="nav-link" to="/blog-page">
+                      Blogs
+                    </RouterLink>
                   </li>
                   <li className="nav-item ms-0 cursor-pointer">
                     <ScrollLink

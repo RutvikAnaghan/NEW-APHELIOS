@@ -576,7 +576,7 @@ export default function WhoWeAre() {
         </div>
       </main>
       <Footer />
-      <Switcher />
+      {/* <Switcher /> */}
       <Navbar />
     </>
   );

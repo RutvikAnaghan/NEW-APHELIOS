@@ -365,7 +365,7 @@ export default function Services() {
         </div>
       </main>
       <Footer />
-      <Switcher />
+      {/* <Switcher /> */}
       <Navbar />
     </>
   );
