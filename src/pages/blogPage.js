@@ -13,7 +13,7 @@ const BlogPage = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/blogs")
+    fetch("https://apheliosblogs.onrender.com/api/blogs")
       .then(res => res.json())
       .then(data => {
         console.log("data", data);

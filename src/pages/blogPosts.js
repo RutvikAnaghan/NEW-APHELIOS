@@ -9,7 +9,7 @@ const BlogPosts = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/blogs/${id}`)
+    fetch(`https://apheliosblogs.onrender.com/api/blogs/${id}`)
       .then(res => res.json())
       .then(data => {
         setBlog(data);
